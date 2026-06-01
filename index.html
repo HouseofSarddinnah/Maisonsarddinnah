@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="p:domain_verify" content="7c4eb90c9ce35600262d24cbceb86d59"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Sarddinnah — Travel, Style, Beauty, Wellness & Digital Life</title>
+  <meta name="description" content="Where elegance meets inspiration — your weekly guide to travel, style, beauty, wellness, and living." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --pink:#ff6f91; --pink-dk:#ff5078; --gold:#c9a96e; --dark:#1a1a1a; --muted:#666; --bg:#ffffff; --border:#ebebeb; --max:1200px; }
+    body { font-family: 'Montserrat', sans-serif; color: var(--dark); background: var(--bg); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+    /* NAV */
+    .site-nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 500; color: var(--dark); }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dark); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--pink); }
+    .nav-links a.newsletter-link { background: var(--pink); color: #fff; padding: 8px 18px; border-radius: 20px; }
+    .nav-links a.newsletter-link:hover { background: var(--pink-dk); }
+    @media (max-width: 768px) { .nav-links { gap: 16px; } .nav-links a:not(.newsletter-link) { display: none; } }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #f9e8ee 0%, #ede8f5 50%, #e8f0f9 100%); padding: 100px 24px 90px; text-align: center; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 500; color: var(--dark); margin-bottom: 20px; line-height: 1.2; }
+    .hero p { font-size: 1.05rem; color: var(--muted); max-width: 540px; margin: 0 auto 36px; font-weight: 300; }
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: var(--pink); color: #fff; padding: 14px 32px; border-radius: 28px; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; transition: background 0.2s; }
+    .btn-primary:hover { background: var(--pink-dk); }
+    .btn-outline { background: transparent; color: var(--dark); border: 2px solid var(--dark); padding: 12px 28px; border-radius: 28px; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; transition: all 0.2s; }
+    .btn-outline:hover { background: var(--dark); color: #fff; }
+
+    /* SECTION */
+    .home-section { max-width: var(--max); margin: 0 auto; padding: 64px 24px 40px; }
+    .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 32px; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 500; }
+    .section-header a.see-all { background: var(--pink); color: #fff; padding: 9px 22px; border-radius: 20px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; transition: background 0.2s; }
+    .section-header a.see-all:hover { background: var(--pink-dk); }
+
+    /* CARD GRID */
+    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    @media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .card-grid { grid-template-columns: 1fr; } }
+
+    .post-card { border-radius: 4px; overflow: hidden; background: #fff; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; }
+    .post-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.09); }
+    .card-img { height: 200px; background: #f0ede8; overflow: hidden; }
+    .card-img img { transition: transform 0.4s; }
+    .post-card:hover .card-img img { transform: scale(1.04); }
+    .card-content { padding: 20px 22px 24px; }
+    .card-cat { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; color: var(--pink); margin-bottom: 10px; }
+    .card-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 500; line-height: 1.4; color: var(--dark); margin-bottom: 10px; }
+    .card-excerpt { font-size: 0.87rem; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+    .card-read { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--dark); border-bottom: 1.5px solid var(--pink); padding-bottom: 2px; display: inline-block; }
+    a.post-card:hover .card-title { color: var(--pink) !important; }
+
+    /* DIVIDER */
+    .section-divider { border: none; border-top: 1px solid var(--border); max-width: var(--max); margin: 0 auto; }
+
+    /* ABOUT STRIP */
+    .about-strip { background: linear-gradient(135deg, #1a1410 0%, #3b2d22 100%); padding: 72px 24px; text-align: center; margin-top: 40px; }
+    .about-strip .eyebrow { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 600; color: var(--gold); margin-bottom: 14px; }
+    .about-strip h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 500; color: #f5f0e8; margin-bottom: 14px; }
+    .about-strip p { color: #c8bfb0; font-size: 0.97rem; max-width: 540px; margin: 0 auto 28px; font-weight: 300; }
+    .btn-gold { background: var(--gold); color: #fff; padding: 12px 28px; border-radius: 24px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; display: inline-block; transition: background 0.2s; }
+    .btn-gold:hover { background: #b8923a; }
+
+    /* NEWSLETTER */
+    .newsletter-banner { background: linear-gradient(135deg, #fff0f4 0%, #f5f0fa 100%); border-top: 1px solid #f0e0ea; border-bottom: 1px solid #f0e0ea; padding: 72px 24px; text-align: center; margin-top: 40px; }
+    .newsletter-banner .eyebrow { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 600; color: var(--pink); margin-bottom: 14px; }
+    .newsletter-banner h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 500; margin-bottom: 14px; }
+    .newsletter-banner p { color: var(--muted); font-size: 0.97rem; max-width: 440px; margin: 0 auto 32px; font-weight: 300; }
+    .newsletter-form { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+    .newsletter-form input { flex: 1; min-width: 220px; padding: 13px 18px; border: 1.5px solid #ddd; border-radius: 28px; font-size: 0.9rem; font-family: 'Montserrat', sans-serif; outline: none; }
+    .newsletter-form input:focus { border-color: var(--pink); }
+    .newsletter-form button { background: var(--pink); color: #fff; border: none; padding: 13px 28px; border-radius: 28px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; font-family: 'Montserrat', sans-serif; transition: background 0.2s; }
+    .newsletter-form button:hover { background: var(--pink-dk); }
+
+    /* FOOTER */
+    footer { background: var(--dark); color: #aaa; text-align: center; padding: 48px 24px 32px; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff; text-decoration: none; display: block; margin-bottom: 20px; }
+    .footer-tagline { font-size: 0.85rem; color: #666; margin-bottom: 20px; }
+    .footer-nav { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-nav a { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: #888; text-decoration: none; font-weight: 500; }
+    .footer-nav a:hover { color: var(--pink); }
+    .footer-divider { border: none; border-top: 1px solid #333; margin: 20px auto; max-width: 600px; }
+    .footer-legal { font-size: 11px; color: #555; margin-bottom: 12px; }
+    .footer-legal a { color: #555; text-decoration: none; margin: 0 8px; }
+    footer small { font-size: 11px; color: #444; }
+  </style>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3546051239780392" crossorigin="anonymous"></script>
+
+  <!-- Travel Payouts Affiliate Script -->
+  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
+  (function () { var script = document.createElement("script"); script.async = 1; script.src = 'https://tpembars.com/NTMxOTk5.js?t=531999'; document.head.appendChild(script); })();
+  </script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Maison Sarddinnah</a>
+    <div class="nav-links">
+      <a href="sections/travel.html">Travel</a>
+      <a href="sections/style.html">Style</a>
+      <a href="sections/beauty.html">Beauty</a>
+      <a href="sections/wellness.html">Wellness</a>
+      <a href="sections/living.html">Living</a>
+      <a href="sections/digital.html">Digital</a>
+      <a href="resources.html">Resources</a>
+      <a href="newsletter.html" class="newsletter-link">✉ Newsletter</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Maison Sarddinnah</h1>
+  <p>Where elegance meets inspiration — your weekly guide to travel, style, beauty, wellness, and living.</p>
+  <div class="hero-btns">
+    <a href="blog/index.html" class="btn-primary">Explore Articles</a>
+    <a href="newsletter.html" class="btn-outline">✉ Weekly Newsletter</a>
+  </div>
+</section>
+
+<!-- TRAVEL -->
+<section class="home-section">
+  <div class="section-header">
+    <h2>Travel</h2>
+    <a href="sections/travel.html" class="see-all">All Travel →</a>
+  </div>
+  <div class="card-grid">
+    <a href="blog/travel/solo-female-travel.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Travel · 2026 Guide</div>
+        <h3 class="card-title">The Ultimate Guide to Solo Female Travel in 2026</h3>
+        <p class="card-excerpt">Solo female travel in 2026 is more accessible and more empowering than ever.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/travel/slow-travel.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Travel · Intentional Living</div>
+        <h3 class="card-title">The Art of Slow Travel — Why Moving Less Means Experiencing More</h3>
+        <p class="card-excerpt">A complete reorientation of how you relate to a place. The philosophy and the practice.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/travel/mexico-city.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1518659526054-190340b32735?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Destination · CDMX 2026</div>
+        <h3 class="card-title">Mexico City Travel Guide 2026 — The Sophisticated Traveler's Guide to CDMX</h3>
+        <p class="card-excerpt">One of the most compelling travel destinations on earth, explained properly.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- STYLE -->
+<section class="home-section">
+  <div class="section-header">
+    <h2>Style</h2>
+    <a href="sections/style.html" class="see-all">All Style →</a>
+  </div>
+  <div class="card-grid">
+    <a href="blog/style/10-effortless-style-rules-every-woman-should-know.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Style</div>
+        <h3 class="card-title">10 Effortless Style Rules Every Woman Should Know</h3>
+        <p class="card-excerpt">Style doesn't have to be complicated. The women who look best almost always follow the same quiet principles.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/style/the-capsule-wardrobe-guide-for-2026.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Style · Wardrobe</div>
+        <h3 class="card-title">The Capsule Wardrobe Guide for 2026</h3>
+        <p class="card-excerpt">A capsule wardrobe sounds restrictive until you try it — and then you realise it's actually the most freeing thing you can do.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/style/parisian-style-secrets-you-can-steal-today.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Style · Paris</div>
+        <h3 class="card-title">Parisian Style Secrets You Can Steal Today</h3>
+        <p class="card-excerpt">The Parisian woman has become a fashion myth — effortlessly chic, never overdone, somehow always looking perfectly put together.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- BEAUTY -->
+<section class="home-section">
+  <div class="section-header">
+    <h2>Beauty</h2>
+    <a href="sections/beauty.html" class="see-all">All Beauty →</a>
+  </div>
+  <div class="card-grid">
+    <a href="blog/beauty/glow-cation.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Beauty · Travel Skincare</div>
+        <h3 class="card-title">The Glow-cation Guide — How to Travel for Your Skin & Your Glow</h3>
+        <p class="card-excerpt">How to protect your complexion, lean into humidity, and come home glowing.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/beauty/skincare-mistakes-youre-probably-making.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Beauty · Skincare</div>
+        <h3 class="card-title">Skincare Mistakes You're Probably Making</h3>
+        <p class="card-excerpt">Even people with a solid skincare routine can be quietly undoing their own hard work.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/beauty/dermatologist-approved-anti-aging-tips.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Beauty · Anti-Aging</div>
+        <h3 class="card-title">Dermatologist-Approved Anti-Aging Tips</h3>
+        <p class="card-excerpt">The most effective anti-ageing advice from dermatologists is often the simplest — and the most ignored.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- WELLNESS -->
+<section class="home-section">
+  <div class="section-header">
+    <h2>Wellness</h2>
+    <a href="sections/wellness.html" class="see-all">All Wellness →</a>
+  </div>
+  <div class="card-grid">
+    <a href="blog/wellness/morning-rituals-that-transform-your-day.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1499728603263-13726abce5fd?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Wellness · Morning Routine</div>
+        <h3 class="card-title">Morning Rituals That Transform Your Day</h3>
+        <p class="card-excerpt">The way you start your morning shapes everything that follows — and the science backs this up completely.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/wellness/the-science-of-better-sleep.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1531353826977-0941b4779a1c?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Wellness · Sleep</div>
+        <h3 class="card-title">The Science of Better Sleep</h3>
+        <p class="card-excerpt">Most of us know we should sleep better. What we're less clear on is why we can't manage it — and what actually works.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/wellness/how-to-build-a-self-care-routine-that-actually-sticks.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Wellness · Self-Care</div>
+        <h3 class="card-title">How to Build a Self-Care Routine That Actually Sticks</h3>
+        <p class="card-excerpt">Self-care has been so thoroughly aestheticised that it's easy to forget what it's actually for.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- LIVING -->
+<section class="home-section">
+  <div class="section-header">
+    <h2>Living</h2>
+    <a href="sections/living.html" class="see-all">All Living →</a>
+  </div>
+  <div class="card-grid">
+    <a href="blog/living/small-space-decor-ideas-that-look-expensive.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Living · Interiors</div>
+        <h3 class="card-title">Small Space Decor Ideas That Look Expensive</h3>
+        <p class="card-excerpt">Small spaces are not a design problem — they're a design opportunity. Here's how to make the most of every square foot.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/living/interior-trends-dominating-2026.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Living · Design Trends</div>
+        <h3 class="card-title">Interior Trends Dominating 2026</h3>
+        <p class="card-excerpt">Interior design in 2026 is a study in warmth, intentionality, and a quiet pushback against clinical minimalism.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/living/how-to-create-a-cozy-home-aesthetic.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Living · Home</div>
+        <h3 class="card-title">How to Create a Cozy Home Aesthetic</h3>
+        <p class="card-excerpt">Cosiness isn't about a specific design style — it's a feeling, and like all feelings, it can be intentionally created.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- DIGITAL -->
+<section class="home-section">
+  <div class="section-header">
+    <h2>Digital</h2>
+    <a href="sections/digital.html" class="see-all">All Digital →</a>
+  </div>
+  <div class="card-grid">
+    <a href="blog/digital/ai-travel-planning.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Digital · AI · 2026</div>
+        <h3 class="card-title">How to Use AI to Plan the Perfect Trip in 2026</h3>
+        <p class="card-excerpt">AI trip planning has matured from a party trick into a genuine travel tool worth using.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/digital/how-to-build-a-digital-side-hustle.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Digital · Side Hustle</div>
+        <h3 class="card-title">How to Build a Digital Side Hustle</h3>
+        <p class="card-excerpt">The digital economy has created genuinely accessible paths to supplemental income — if you approach them correctly.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="blog/digital/the-truth-about-growing-on-tiktok-in-2026.html" class="post-card">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat">Digital · TikTok</div>
+        <h3 class="card-title">The Truth About Growing on TikTok in 2026</h3>
+        <p class="card-excerpt">TikTok is still one of the most powerful platforms for organic reach — but the strategies have changed significantly.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<div class="about-strip">
+  <div class="eyebrow">About Maison Sarddinnah</div>
+  <h2>For the Woman Who Moves Through the World with Intention</h2>
+  <p>We write about travel, style, beauty, wellness, and the digital tools that make modern life more elegant. Every article is written to be genuinely useful — not just beautiful to look at.</p>
+  <a href="about.html" class="btn-gold">Our Story →</a>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter-banner">
+  <div class="eyebrow">The Maison Edit</div>
+  <h2>Weekly Inspiration, Every Thursday</h2>
+  <p>Travel finds, beauty picks, and the reads worth your time — delivered once a week, beautifully.</p>
+  <form class="newsletter-form" onsubmit="return false;">
+    <input type="email" placeholder="Your email address" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+<footer>
+  <a href="index.html" class="footer-logo">Maison Sarddinnah</a>
+  <p class="footer-tagline">Where elegance meets inspiration</p>
+  <nav class="footer-nav">
+    <a href="sections/travel.html">Travel</a>
+    <a href="sections/style.html">Style</a>
+    <a href="sections/beauty.html">Beauty</a>
+    <a href="sections/wellness.html">Wellness</a>
+    <a href="sections/living.html">Living</a>
+    <a href="sections/digital.html">Digital</a>
+    <a href="resources.html">Resources</a>
+    <a href="blog/index.html">All Articles</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="footer-divider"></div>
+  <div class="footer-legal">
+    <a href="affiliate-disclosure.html">Affiliate Disclosure</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="terms-conditions.html">Terms & Conditions</a> ·
+    <a href="disclaimer.html">Disclaimer</a>
+  </div>
+  <small>© 2026 Maison Sarddinnah. All rights reserved.</small>
+</footer>
+
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/newsletter.js"></script>
+</body>
+</html>

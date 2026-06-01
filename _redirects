@@ -1,0 +1,106 @@
+# ================================================
+# MAISON SARDDINNAH — CLOUDFLARE REDIRECTS
+# Note: _redirects only applies on Cloudflare Pages.
+#       All internal links use relative paths for
+#       local VS Code dev server compatibility.
+# ================================================
+
+# Old URL patterns → new structure
+/hidden-gems---europe.html        /blog/travel/hidden-gems-europe.html    301
+/beauty-blog.html                 /blog/beauty/article-1.html             301
+
+# Blog post short URLs
+/blog/solo-female-travel          /blog/travel/solo-female-travel.html    301
+/blog/slow-travel                 /blog/travel/slow-travel.html           301
+/blog/mexico-city                 /blog/travel/mexico-city.html           301
+/blog/travel-groups               /blog/travel/travel-groups.html         301
+/blog/glow-cation                 /blog/beauty/glow-cation.html           301
+/blog/ai-travel-planning          /blog/digital/ai-travel-planning.html   301
+
+# Legacy numbered filenames → canonical paths
+/blog-1-solo-female-travel.html   /blog/travel/solo-female-travel.html    301
+/blog-2-ai-travel-planning.html   /blog/digital/ai-travel-planning.html   301
+/blog-3-slow-travel.html          /blog/travel/slow-travel.html           301
+/blog-4-glow-cation.html          /blog/beauty/glow-cation.html           301
+/blog-5-mexico-city.html          /blog/travel/mexico-city.html           301
+/blog-6-travel-groups.html        /blog/travel/travel-groups.html         301
+
+# Trailing slashes
+/blog/                            /blog/index.html                        301
+
+# 404 fallback
+/*                                /index.html                             404
+
+# New blog posts — vol1 & vol3
+/blog/common-techie-mistakes-you-should-avoid-when-traveling /blog/travel/common-techie-mistakes-you-should-avoid-when-traveling.html 301
+/blog/why-the-80s-were-marbellas-most-dazzling-decade   /blog/travel/why-the-80s-were-marbellas-most-dazzling-decade.html 301
+/blog/unveiling-jamaicas-secrets-with-novia-mcdonald-whyte /blog/travel/unveiling-jamaicas-secrets-with-novia-mcdonald-whyte.html 301
+/blog/the-secret-behind-rios-most-breathtaking-views    /blog/travel/the-secret-behind-rios-most-breathtaking-views.html 301
+/blog/a-scottish-castle-in-brazils-highlands-you-wont-believe-this /blog/travel/a-scottish-castle-in-brazils-highlands-you-wont-believe-this.html 301
+/blog/the-gore-london-where-history-meets-hospitality   /blog/travel/the-gore-london-where-history-meets-hospitality.html 301
+/blog/10-effortless-style-rules-every-woman-should-know /blog/style/10-effortless-style-rules-every-woman-should-know.html 301
+/blog/the-capsule-wardrobe-guide-for-2026               /blog/style/the-capsule-wardrobe-guide-for-2026.html         301
+/blog/how-to-dress-chic-on-a-budget                     /blog/style/how-to-dress-chic-on-a-budget.html               301
+/blog/parisian-style-secrets-you-can-steal-today        /blog/style/parisian-style-secrets-you-can-steal-today.html  301
+/blog/5-outfit-formulas-that-always-work                /blog/style/5-outfit-formulas-that-always-work.html          301
+/blog/the-best-streetstyle-looks-of-the-season          /blog/style/the-best-streetstyle-looks-of-the-season.html    301
+/blog/skincare-mistakes-youre-probably-making           /blog/beauty/skincare-mistakes-youre-probably-making.html    301
+/blog/the-best-lip-colors-for-every-skin-tone           /blog/beauty/the-best-lip-colors-for-every-skin-tone.html    301
+/blog/how-to-build-a-luxury-skincare-routine-on-a-budget /blog/beauty/how-to-build-a-luxury-skincare-routine-on-a-budget.html 301
+/blog/dermatologist-approved-anti-aging-tips            /blog/beauty/dermatologist-approved-anti-aging-tips.html     301
+/blog/makeup-trends-taking-over-2026                    /blog/beauty/makeup-trends-taking-over-2026.html             301
+/blog/the-best-clean-beauty-brands-to-try               /blog/beauty/the-best-clean-beauty-brands-to-try.html        301
+/blog/morning-rituals-that-transform-your-day           /blog/wellness/morning-rituals-that-transform-your-day.html  301
+/blog/how-to-reduce-stress-in-5-minutes                 /blog/wellness/how-to-reduce-stress-in-5-minutes.html        301
+/blog/the-science-of-better-sleep                       /blog/wellness/the-science-of-better-sleep.html              301
+/blog/foods-that-boost-your-mood                        /blog/wellness/foods-that-boost-your-mood.html               301
+/blog/how-to-build-a-self-care-routine-that-actually-sticks /blog/wellness/how-to-build-a-self-care-routine-that-actually-sticks.html 301
+/blog/simple-habits-for-a-healthier-life                /blog/wellness/simple-habits-for-a-healthier-life.html       301
+/blog/small-space-decor-ideas-that-look-expensive       /blog/living/small-space-decor-ideas-that-look-expensive.html 301
+/blog/how-to-create-a-cozy-home-aesthetic               /blog/living/how-to-create-a-cozy-home-aesthetic.html        301
+/blog/minimalist-living-what-to-keep-and-what-to-toss   /blog/living/minimalist-living-what-to-keep-and-what-to-toss.html 301
+/blog/10-cleaning-hacks-that-actually-work              /blog/living/10-cleaning-hacks-that-actually-work.html       301
+/blog/how-to-host-guests-like-a-pro                     /blog/living/how-to-host-guests-like-a-pro.html              301
+/blog/interior-trends-dominating-2026                   /blog/living/interior-trends-dominating-2026.html            301
+/blog/ai-tools-that-make-your-life-easier               /blog/digital/ai-tools-that-make-your-life-easier.html       301
+/blog/how-to-build-a-digital-side-hustle                /blog/digital/how-to-build-a-digital-side-hustle.html        301
+/blog/beginners-guide-to-online-branding                /blog/digital/beginners-guide-to-online-branding.html        301
+/blog/top-apps-you-should-be-using-in-2026              /blog/digital/top-apps-you-should-be-using-in-2026.html      301
+/blog/how-to-stay-safe-online                           /blog/digital/how-to-stay-safe-online.html                   301
+/blog/digital-marketing-tips-for-beginners              /blog/digital/digital-marketing-tips-for-beginners.html      301
+/blog/the-road-trip-packing-list-youll-actually-use     /blog/travel/the-road-trip-packing-list-youll-actually-use.html 301
+/blog/why-bali-still-belongs-on-your-list-and-where-to-go-beyond-t /blog/travel/why-bali-still-belongs-on-your-list-and-where-to-go-beyond-t.html 301
+/blog/how-to-actually-enjoy-airports-yes-really         /blog/travel/how-to-actually-enjoy-airports-yes-really.html  301
+/blog/the-caribbean-islands-you-havent-considered-yet   /blog/travel/the-caribbean-islands-you-havent-considered-yet.html 301
+/blog/travelling-with-a-best-friend-how-to-make-it-work /blog/travel/travelling-with-a-best-friend-how-to-make-it-work.html 301
+/blog/what-travelling-through-africa-taught-me-about-the-world /blog/travel/what-travelling-through-africa-taught-me-about-the-world.html 301
+/blog/how-to-dress-well-in-your-40s-the-rules-that-actually-apply /blog/style/how-to-dress-well-in-your-40s-the-rules-that-actually-apply.html 301
+/blog/the-lost-art-of-getting-dressed-up-for-no-reason  /blog/style/the-lost-art-of-getting-dressed-up-for-no-reason.html 301
+/blog/sustainable-fashion-what-it-actually-means-and-how-to-do-it /blog/style/sustainable-fashion-what-it-actually-means-and-how-to-do-it.html 301
+/blog/the-perfect-white-shirt-why-its-worth-the-search  /blog/style/the-perfect-white-shirt-why-its-worth-the-search.html 301
+/blog/how-to-build-a-work-wardrobe-that-doesnt-feel-like-a-uniform /blog/style/how-to-build-a-work-wardrobe-that-doesnt-feel-like-a-uniform.html 301
+/blog/the-handbag-edit-what-to-own-what-to-invest-in-and-what-to-i /blog/style/the-handbag-edit-what-to-own-what-to-invest-in-and-what-to-i.html 301
+/blog/how-to-transition-your-skincare-routine-between-seasons /blog/beauty/how-to-transition-your-skincare-routine-between-seasons.html 301
+/blog/scalp-health-the-foundation-of-beautiful-hair-youre-probably /blog/beauty/scalp-health-the-foundation-of-beautiful-hair-youre-probably.html 301
+/blog/the-glow-from-within-guide-beauty-that-starts-before-the-pro /blog/beauty/the-glow-from-within-guide-beauty-that-starts-before-the-pro.html 301
+/blog/everything-you-need-to-know-about-spf-and-were-afraid-to-ask /blog/beauty/everything-you-need-to-know-about-spf-and-were-afraid-to-ask.html 301
+/blog/beauty-rituals-from-around-the-world-worth-adopting /blog/beauty/beauty-rituals-from-around-the-world-worth-adopting.html 301
+/blog/the-honest-guide-to-eyebrows-shape-fill-and-the-mistakes-to /blog/beauty/the-honest-guide-to-eyebrows-shape-fill-and-the-mistakes-to.html 301
+/blog/how-to-support-a-friend-who-is-going-through-something-hard /blog/wellness/how-to-support-a-friend-who-is-going-through-something-hard.html 301
+/blog/understanding-your-hormones-a-plain-language-guide-for-women /blog/wellness/understanding-your-hormones-a-plain-language-guide-for-women.html 301
+/blog/the-practice-of-gratitude-what-the-research-actually-says /blog/wellness/the-practice-of-gratitude-what-the-research-actually-says.html 301
+/blog/how-to-actually-drink-more-water-without-it-feeling-like-a-c /blog/wellness/how-to-actually-drink-more-water-without-it-feeling-like-a-c.html 301
+/blog/the-underrated-power-of-doing-one-thing-at-a-time /blog/wellness/the-underrated-power-of-doing-one-thing-at-a-time.html 301
+/blog/nature-as-medicine-why-getting-outside-is-not-optional /blog/wellness/nature-as-medicine-why-getting-outside-is-not-optional.html 301
+/blog/the-evening-routine-that-actually-ends-your-day   /blog/living/the-evening-routine-that-actually-ends-your-day.html 301
+/blog/how-to-make-a-rental-feel-like-home               /blog/living/how-to-make-a-rental-feel-like-home.html        301
+/blog/the-joy-of-cooking-for-one-or-two-without-wasting-anything /blog/living/the-joy-of-cooking-for-one-or-two-without-wasting-anything.html 301
+/blog/building-a-home-library-that-youll-actually-use   /blog/living/building-a-home-library-that-youll-actually-use.html 301
+/blog/the-case-for-slowing-down-your-mornings           /blog/living/the-case-for-slowing-down-your-mornings.html    301
+/blog/how-to-make-your-home-smell-beautiful-naturally   /blog/living/how-to-make-your-home-smell-beautiful-naturally.html 301
+/blog/how-to-write-captions-that-actually-make-people-stop-scrolli /blog/digital/how-to-write-captions-that-actually-make-people-stop-scrolli.html 301
+/blog/understanding-seo-in-plain-language               /blog/digital/understanding-seo-in-plain-language.html       301
+/blog/how-to-turn-your-knowledge-into-an-online-course  /blog/digital/how-to-turn-your-knowledge-into-an-online-course.html 301
+/blog/how-to-manage-your-digital-life-without-losing-your-mind /blog/digital/how-to-manage-your-digital-life-without-losing-your-mind.html 301
+/blog/the-truth-about-growing-on-tiktok-in-2026         /blog/digital/the-truth-about-growing-on-tiktok-in-2026.html 301
+/blog/how-to-price-your-work-online-and-stop-undercharging /blog/digital/how-to-price-your-work-online-and-stop-undercharging.html 301
