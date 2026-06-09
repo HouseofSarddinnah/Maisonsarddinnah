@@ -6,10 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Travel Resources — Maison Sarddinnah</title>
   <meta name="description" content="Our curated list of the tools, apps, booking platforms, and gear we actually use and trust for travel, beauty, and digital life." />
+  <meta name="keywords" content="travel resources, booking platforms, gear, apps, travel tools" />
+  <meta name="author" content="Maison Sarddinnah" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maisonsarddinnah.com/resources/" />
+  <meta property="og:title" content="Travel Resources — Maison Sarddinnah" />
+  <meta property="og:description" content="Our curated list of the tools, apps, booking platforms, and gear we actually use and trust for travel, beauty, and digital life." />
+  <meta property="og:image" content="https://maisonsarddinnah.com/assets/images/og-image.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://maisonsarddinnah.com/resources/" />
+  <meta property="twitter:title" content="Travel Resources — Maison Sarddinnah" />
+  <meta property="twitter:description" content="Our curated list of the tools, apps, booking platforms, and gear we actually use and trust for travel, beauty, and digital life." />
+  <meta property="twitter:image" content="https://maisonsarddinnah.com/assets/images/og-image.jpg" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/editorial.css" />
   <style>
     .icon img { width: 52px; height: 52px; object-fit: contain; display: block; }
     .icon { min-height: 52px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
@@ -38,6 +57,15 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">Maison Sarddinnah</a>
     <div class="nav-links">
+      <div class="nav-dropdown">
+        <a href="destinations/index.html">Destinations <span class="nav-dropdown-arrow">▼</span></a>
+        <div class="nav-dropdown-content">
+          <a href="destinations/europe.html">Europe</a>
+          <a href="destinations/asia.html">Asia</a>
+          <a href="destinations/americas.html">Americas</a>
+          <a href="destinations/africa.html">Africa</a>
+        </div>
+      </div>
       <a href="sections/travel.html">Travel</a>
       <a href="sections/style.html">Style</a>
       <a href="sections/beauty.html">Beauty</a>
@@ -47,18 +75,52 @@
       <a href="resources.html">Resources</a>
       <a href="newsletter.html" class="newsletter-link">✉ Newsletter</a>
     </div>
+    <div class="nav-search">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+    </div>
   </div>
 </nav>
 
 <div class="page-hero">
   <div class="eyebrow">The Maison Edit</div>
-  <h1>Travel Resources</h1>
-  <p style="color:#666;font-size:1rem;max-width:500px;margin:16px auto 0;font-weight:300;">The tools, platforms, and gear we actually use — curated for the woman who travels with intention.</p>
+  <h1>Free Resources & Downloads</h1>
+  <p style="color:#666;font-size:1rem;max-width:500px;margin:16px auto 0;font-weight:300;">Free guides, checklists, and travel planning tools — curated for the woman who travels with intention.</p>
 </div>
 
 <div class="page-body" style="max-width:1100px;">
 
-  <p style="font-style:italic;color:#888;font-size:0.88rem;margin-bottom:40px;">This page contains affiliate links. When you book or buy through our links, we may earn a small commission at no extra cost to you. We only recommend things we genuinely stand behind. <a href="affiliate-disclosure.html">Full disclosure →</a></p>
+  <!-- FREE DOWNLOADABLE RESOURCES -->
+  <h2 class="resource-section-title">📚 Free Downloadable Guides</h2>
+  <p style="color:#666;font-size:0.95rem;margin-bottom:24px;">Join our newsletter to get these free resources delivered to your inbox:</p>
+  <div class="resources-grid">
+    <div class="resource-card" style="border-left:4px solid var(--pink);">
+      <div class="icon" data-emoji="📋">📋</div>
+      <h3>Travel Planning Checklist 2026</h3>
+      <p>A comprehensive 4-week travel planning checklist covering everything from booking flights to packing essentials. Never forget a detail again.</p>
+      <a href="newsletter.html" class="resource-link">Download Free →</a>
+    </div>
+    <div class="resource-card" style="border-left:4px solid var(--gold);">
+      <div class="icon" data-emoji="✈️">✈️</div>
+      <h3>Solo Female Travel Safety Guide</h3>
+      <p>Essential safety tips, destination recommendations, and practical advice for solo female travelers. Peace of mind for your next adventure.</p>
+      <a href="newsletter.html" class="resource-link">Download Free →</a>
+    </div>
+    <div class="resource-card" style="border-left:4px solid var(--pink);">
+      <div class="icon" data-emoji="🧴">🧴</div>
+      <h3>Travel Skincare Routine Guide</h3>
+      <p>The complete guide to maintaining your glow while traveling. TSA-approved product recommendations and routine adjustments for any destination.</p>
+      <a href="newsletter.html" class="resource-link">Download Free →</a>
+    </div>
+    <div class="resource-card" style="border-left:4px solid var(--gold);">
+      <div class="icon" data-emoji="💼">💼</div>
+      <h3>Capsule Wardrobe Builder</h3>
+      <p>A worksheet to help you build the perfect capsule wardrobe for any trip. Mix and match formulas for elegant, versatile packing.</p>
+      <a href="newsletter.html" class="resource-link">Download Free →</a>
+    </div>
+  </div>
+
+  <p style="font-style:italic;color:#888;font-size:0.88rem;margin:40px 0;">This page contains affiliate links. When you book or buy through our links, we may earn a small commission at no extra cost to you. We only recommend things we genuinely stand behind. <a href="affiliate-disclosure.html">Full disclosure →</a></p>
 
   <!-- FLIGHTS & BOOKING -->
   <h2 class="resource-section-title">✈️ Flights & Booking</h2>
@@ -202,15 +264,16 @@
 </div>
 
 <!-- NEWSLETTER BANNER -->
-<div class="newsletter-banner">
-  <div class="eyebrow">The Maison Edit</div>
-  <h2>Weekly Inspiration, Every Thursday</h2>
-  <p>Travel finds, beauty picks, and the reads worth your time — delivered once a week, beautifully.</p>
-  <form class="newsletter-form" onsubmit="return false;">
-    <input type="email" placeholder="Your email address" required />
-    <button type="submit">Subscribe</button>
-  </form>
-  <p class="form-message"></p>
+<div class="newsletter-banner-enhanced">
+  <div class="inner">
+    <div class="eyebrow">The Maison Edit</div>
+    <h2>Get All Free Resources + Weekly Inspiration</h2>
+    <p>Subscribe to receive our free downloadable guides, travel planning checklists, and weekly travel finds — delivered every Thursday.</p>
+    <form class="newsletter-form-enhanced" onsubmit="return false;">
+      <input type="email" placeholder="Your email address" required />
+      <button type="submit">Subscribe Free</button>
+    </form>
+  </div>
 </div>
 
 <footer>

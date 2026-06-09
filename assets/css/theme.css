@@ -32,9 +32,9 @@ a { text-decoration: none; color: inherit; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 /* ── NAV ── */
-.site-nav { position: sticky; top: 0; z-index: 200; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+.site-nav { position: sticky; top: 0; z-index: 200; background: #ffffff !important; border-bottom: 1px solid var(--border); }
 .nav-inner { max-width: var(--max); margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: var(--nav-h); }
-.nav-logo { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; color: var(--dark); letter-spacing: 0.01em; }
+.nav-logo { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; color: var(--dark); letter-spacing: 0.01em; padding: 0 32px; }
 .nav-links { display: flex; gap: 28px; align-items: center; }
 .nav-links a { font-size: 10.5px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dark); transition: color var(--trans); }
 .nav-links a:hover, .nav-links a.active { color: var(--pink); }

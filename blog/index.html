@@ -6,7 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Blog — Maison Sarddinnah</title>
   <meta name="description" content="Travel, beauty, wellness, style, living, and digital life. Thoughtful editorial for the woman who moves through the world with intention." />
+  <meta name="keywords" content="blog, travel, style, beauty, wellness, living, digital, destination guides" />
+  <meta name="author" content="Maison Sarddinnah" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maisonsarddinnah.com/blog/" />
+  <meta property="og:title" content="The Blog — Maison Sarddinnah" />
+  <meta property="og:description" content="Travel, beauty, wellness, style, living, and digital life. Thoughtful editorial for the woman who moves through the world with intention." />
+  <meta property="og:image" content="https://maisonsarddinnah.com/assets/images/og-image.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://maisonsarddinnah.com/blog/" />
+  <meta property="twitter:title" content="The Blog — Maison Sarddinnah" />
+  <meta property="twitter:description" content="Travel, beauty, wellness, style, living, and digital life. Thoughtful editorial for the woman who moves through the world with intention." />
+  <meta property="twitter:image" content="https://maisonsarddinnah.com/assets/images/og-image.jpg" />
+  
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/theme.css" />
+  <link rel="stylesheet" href="../assets/css/editorial.css" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--pink:#ff6f91;--pink-dk:#ff5078;--dark:#1a1a1a;--muted:#666;--bg:#fff;--border:#ebebeb;--max:1200px}
@@ -67,6 +87,15 @@
   <div class="nav-inner">
     <a href="../index.html" class="nav-logo">Maison Sarddinnah</a>
     <div class="nav-links">
+      <div class="nav-dropdown">
+        <a href="../destinations/index.html">Destinations <span class="nav-dropdown-arrow">▼</span></a>
+        <div class="nav-dropdown-content">
+          <a href="../destinations/europe.html">Europe</a>
+          <a href="../destinations/asia.html">Asia</a>
+          <a href="../destinations/americas.html">Americas</a>
+          <a href="../destinations/africa.html">Africa</a>
+        </div>
+      </div>
       <a href="../sections/travel.html">Travel</a>
       <a href="../sections/style.html">Style</a>
       <a href="../sections/beauty.html">Beauty</a>
@@ -76,12 +105,16 @@
       <a href="../resources.html">Resources</a>
       <a href="../newsletter.html" class="newsletter-link">✉ Newsletter</a>
     </div>
+    <div class="nav-search">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+    </div>
   </div>
 </nav>
 <div class="blog-hero">
   <div class="eyebrow">The Maison Sarddinnah Blog</div>
   <h1>Stories Worth Reading</h1>
-  <p>Travel, beauty, wellness, style, living, and digital life — 78 articles for the woman who moves through the world with intention.</p>
+  <p>Travel, beauty, wellness, style, living, and digital life — 85 articles for the woman who moves through the world with intention.</p>
 </div>
 <div class="filter-bar">
   <button class="filter-btn active" onclick="filterPosts('all',this)">All Posts</button>
@@ -91,6 +124,88 @@
   <button class="filter-btn" onclick="filterPosts('wellness',this)">Wellness</button>
   <button class="filter-btn" onclick="filterPosts('living',this)">Living</button>
   <button class="filter-btn" onclick="filterPosts('digital',this)">Digital</button>
+</div>
+
+<!-- CONTENT TYPE FILTERS -->
+<div class="filter-bar" style="padding: 0 24px 8px;">
+  <button class="filter-btn" onclick="filterByType('guide',this)">Guides</button>
+  <button class="filter-btn" onclick="filterByType('tips',this)">Tips</button>
+  <button class="filter-btn" onclick="filterByType('review',this)">Reviews</button>
+  <button class="filter-btn" onclick="filterByType('story',this)">Stories</button>
+</div>
+
+<!-- FEATURED SECTION -->
+<div class="section-label" style="padding: 48px 24px 0;">
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:500;display:flex;align-items:center;gap:16px;">
+    <span style="color:var(--pink);">★</span> Featured
+    <span style="flex:1;height:1px;background:#ebebeb;display:block;margin-left:8px;"></span>
+  </h2>
+</div>
+<div class="blog-grid" style="padding: 24px 24px 20px;">
+    <a href="travel/mexico-city.html" class="post-card" data-cat="travel" data-featured="true">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1518659526054-190340b32735?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat" style="color:var(--pink);">★ Featured · Travel</div>
+        <h3 class="card-title">Mexico City Travel Guide 2026 — The Sophisticated Traveler's Guide to CDMX</h3>
+        <p class="card-excerpt">One of the most compelling travel destinations on earth, explained properly.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="style/the-capsule-wardrobe-guide-for-2026.html" class="post-card" data-cat="style" data-featured="true">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat" style="color:var(--pink);">★ Featured · Style</div>
+        <h3 class="card-title">The Capsule Wardrobe Guide for 2026</h3>
+        <p class="card-excerpt">A capsule wardrobe sounds restrictive until you try it — and then you realise it's actually the most freeing thing you can do.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="beauty/dermatologist-approved-anti-aging-tips.html" class="post-card" data-cat="beauty" data-featured="true">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat" style="color:var(--pink);">★ Featured · Beauty</div>
+        <h3 class="card-title">Dermatologist-Approved Anti-Aging Tips</h3>
+        <p class="card-excerpt">The most effective anti-ageing advice from dermatologists is often the simplest — and the most ignored.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+</div>
+
+<!-- TRENDING SECTION -->
+<div class="section-label" style="padding: 48px 24px 0;">
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:500;display:flex;align-items:center;gap:16px;">
+    <span style="color:var(--gold);">🔥</span> Trending
+    <span style="flex:1;height:1px;background:#ebebeb;display:block;margin-left:8px;"></span>
+  </h2>
+</div>
+<div class="blog-grid" style="padding: 24px 24px 20px;">
+    <a href="travel/solo-female-travel.html" class="post-card" data-cat="travel" data-trending="true">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat" style="color:var(--gold);">🔥 Trending · Travel</div>
+        <h3 class="card-title">The Ultimate Guide to Solo Female Travel in 2026</h3>
+        <p class="card-excerpt">Solo female travel in 2026 is more accessible, more connected, and more empowering than ever.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="wellness/the-science-of-better-sleep.html" class="post-card" data-cat="wellness" data-trending="true">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1531353826977-0941b4779a1c?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat" style="color:var(--gold);">🔥 Trending · Wellness</div>
+        <h3 class="card-title">The Science of Better Sleep</h3>
+        <p class="card-excerpt">Most of us know we should sleep better. What we're less clear on is why we can't manage it — and what actually works.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
+    <a href="digital/ai-travel-planning.html" class="post-card" data-cat="digital" data-trending="true">
+      <div class="card-img"><img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="" loading="lazy" /></div>
+      <div class="card-content">
+        <div class="card-cat" style="color:var(--gold);">🔥 Trending · Digital</div>
+        <h3 class="card-title">How to Use AI to Plan the Perfect Trip in 2026</h3>
+        <p class="card-excerpt">AI trip planning has matured from a party trick into a genuine travel tool worth using.</p>
+        <span class="card-read">Read Article</span>
+      </div>
+    </a>
 </div>
 
 <div class="section-label" data-section="travel">

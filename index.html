@@ -7,9 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maison Sarddinnah — Travel, Style, Beauty, Wellness & Digital Life</title>
   <meta name="description" content="Where elegance meets inspiration — your weekly guide to travel, style, beauty, wellness, and living." />
+  <meta name="keywords" content="travel, style, beauty, wellness, living, digital, destination guides, luxury travel, solo female travel" />
+  <meta name="author" content="Maison Sarddinnah" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maisonsarddinnah.com/" />
+  <meta property="og:title" content="Maison Sarddinnah — Travel, Style, Beauty, Wellness & Digital Life" />
+  <meta property="og:description" content="Where elegance meets inspiration — your weekly guide to travel, style, beauty, wellness, and living." />
+  <meta property="og:image" content="https://maisonsarddinnah.com/assets/images/og-image.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://maisonsarddinnah.com/" />
+  <meta property="twitter:title" content="Maison Sarddinnah — Travel, Style, Beauty, Wellness & Digital Life" />
+  <meta property="twitter:description" content="Where elegance meets inspiration — your weekly guide to travel, style, beauty, wellness, and living." />
+  <meta property="twitter:image" content="https://maisonsarddinnah.com/assets/images/og-image.jpg" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/editorial.css" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --pink:#ff6f91; --pink-dk:#ff5078; --gold:#c9a96e; --dark:#1a1a1a; --muted:#666; --bg:#ffffff; --border:#ebebeb; --max:1200px; }
@@ -28,62 +48,6 @@
     .nav-links a.newsletter-link:hover { background: var(--pink-dk); }
     @media (max-width: 768px) { .nav-links { gap: 16px; } .nav-links a:not(.newsletter-link) { display: none; } }
 
-    /* HERO */
-    .hero { background: linear-gradient(135deg, #f9e8ee 0%, #ede8f5 50%, #e8f0f9 100%); padding: 100px 24px 90px; text-align: center; }
-    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 500; color: var(--dark); margin-bottom: 20px; line-height: 1.2; }
-    .hero p { font-size: 1.05rem; color: var(--muted); max-width: 540px; margin: 0 auto 36px; font-weight: 300; }
-    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-    .btn-primary { background: var(--pink); color: #fff; padding: 14px 32px; border-radius: 28px; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; transition: background 0.2s; }
-    .btn-primary:hover { background: var(--pink-dk); }
-    .btn-outline { background: transparent; color: var(--dark); border: 2px solid var(--dark); padding: 12px 28px; border-radius: 28px; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; transition: all 0.2s; }
-    .btn-outline:hover { background: var(--dark); color: #fff; }
-
-    /* SECTION */
-    .home-section { max-width: var(--max); margin: 0 auto; padding: 64px 24px 40px; }
-    .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 32px; }
-    .section-header h2 { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 500; }
-    .section-header a.see-all { background: var(--pink); color: #fff; padding: 9px 22px; border-radius: 20px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; transition: background 0.2s; }
-    .section-header a.see-all:hover { background: var(--pink-dk); }
-
-    /* CARD GRID */
-    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-    @media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 560px) { .card-grid { grid-template-columns: 1fr; } }
-
-    .post-card { border-radius: 4px; overflow: hidden; background: #fff; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; }
-    .post-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.09); }
-    .card-img { height: 200px; background: #f0ede8; overflow: hidden; }
-    .card-img img { transition: transform 0.4s; }
-    .post-card:hover .card-img img { transform: scale(1.04); }
-    .card-content { padding: 20px 22px 24px; }
-    .card-cat { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; color: var(--pink); margin-bottom: 10px; }
-    .card-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 500; line-height: 1.4; color: var(--dark); margin-bottom: 10px; }
-    .card-excerpt { font-size: 0.87rem; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
-    .card-read { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--dark); border-bottom: 1.5px solid var(--pink); padding-bottom: 2px; display: inline-block; }
-    a.post-card:hover .card-title { color: var(--pink) !important; }
-
-    /* DIVIDER */
-    .section-divider { border: none; border-top: 1px solid var(--border); max-width: var(--max); margin: 0 auto; }
-
-    /* ABOUT STRIP */
-    .about-strip { background: linear-gradient(135deg, #1a1410 0%, #3b2d22 100%); padding: 72px 24px; text-align: center; margin-top: 40px; }
-    .about-strip .eyebrow { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 600; color: var(--gold); margin-bottom: 14px; }
-    .about-strip h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 500; color: #f5f0e8; margin-bottom: 14px; }
-    .about-strip p { color: #c8bfb0; font-size: 0.97rem; max-width: 540px; margin: 0 auto 28px; font-weight: 300; }
-    .btn-gold { background: var(--gold); color: #fff; padding: 12px 28px; border-radius: 24px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; display: inline-block; transition: background 0.2s; }
-    .btn-gold:hover { background: #b8923a; }
-
-    /* NEWSLETTER */
-    .newsletter-banner { background: linear-gradient(135deg, #fff0f4 0%, #f5f0fa 100%); border-top: 1px solid #f0e0ea; border-bottom: 1px solid #f0e0ea; padding: 72px 24px; text-align: center; margin-top: 40px; }
-    .newsletter-banner .eyebrow { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 600; color: var(--pink); margin-bottom: 14px; }
-    .newsletter-banner h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 500; margin-bottom: 14px; }
-    .newsletter-banner p { color: var(--muted); font-size: 0.97rem; max-width: 440px; margin: 0 auto 32px; font-weight: 300; }
-    .newsletter-form { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
-    .newsletter-form input { flex: 1; min-width: 220px; padding: 13px 18px; border: 1.5px solid #ddd; border-radius: 28px; font-size: 0.9rem; font-family: 'Montserrat', sans-serif; outline: none; }
-    .newsletter-form input:focus { border-color: var(--pink); }
-    .newsletter-form button { background: var(--pink); color: #fff; border: none; padding: 13px 28px; border-radius: 28px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; font-family: 'Montserrat', sans-serif; transition: background 0.2s; }
-    .newsletter-form button:hover { background: var(--pink-dk); }
-
     /* FOOTER */
     footer { background: var(--dark); color: #aaa; text-align: center; padding: 48px 24px 32px; }
     .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff; text-decoration: none; display: block; margin-bottom: 20px; }
@@ -97,6 +61,7 @@
     footer small { font-size: 11px; color: #444; }
   </style>
   <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/editorial.css" />
 
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3546051239780392" crossorigin="anonymous"></script>
@@ -112,6 +77,15 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">Maison Sarddinnah</a>
     <div class="nav-links">
+      <div class="nav-dropdown">
+        <a href="destinations/index.html">Destinations <span class="nav-dropdown-arrow">▼</span></a>
+        <div class="nav-dropdown-content">
+          <a href="destinations/europe.html">Europe</a>
+          <a href="destinations/asia.html">Asia</a>
+          <a href="destinations/americas.html">Americas</a>
+          <a href="destinations/africa.html">Africa</a>
+        </div>
+      </div>
       <a href="sections/travel.html">Travel</a>
       <a href="sections/style.html">Style</a>
       <a href="sections/beauty.html">Beauty</a>
@@ -121,249 +95,305 @@
       <a href="resources.html">Resources</a>
       <a href="newsletter.html" class="newsletter-link">✉ Newsletter</a>
     </div>
+    <div class="nav-search">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+    </div>
   </div>
 </nav>
 
-<section class="hero">
-  <h1>Maison Sarddinnah</h1>
-  <p>Where elegance meets inspiration — your weekly guide to travel, style, beauty, wellness, and living.</p>
-  <div class="hero-btns">
-    <a href="blog/index.html" class="btn-primary">Explore Articles</a>
-    <a href="newsletter.html" class="btn-outline">✉ Weekly Newsletter</a>
+<!-- HERO FEATURED ARTICLE -->
+<a href="blog/travel/mexico-city.html" class="hero-featured">
+  <div class="hero-featured-bg" style="background-image: url('https://images.unsplash.com/photo-1518659526054-190340b32735?w=1600&q=80');"></div>
+  <div class="hero-featured-overlay"></div>
+  <div class="hero-featured-content">
+    <span class="hero-featured-tag">Featured · Destination Guide</span>
+    <h2>Mexico City Travel Guide 2026 — The Sophisticated Traveler's Guide to CDMX</h2>
+    <p>One of the most compelling travel destinations on earth, explained properly. From historic neighborhoods to world-class dining.</p>
+    <div class="hero-featured-meta">
+      <span>12 min read</span>
+      <span>·</span>
+      <span>Travel</span>
+    </div>
+    <span class="hero-featured-read">Read Full Guide →</span>
   </div>
-</section>
+</a>
 
-<!-- TRAVEL -->
-<section class="home-section">
-  <div class="section-header">
-    <h2>Travel</h2>
-    <a href="sections/travel.html" class="see-all">All Travel →</a>
+<!-- EDITOR'S NOTE -->
+<div class="editors-note">
+  <div class="editors-note-inner">
+    <div class="editors-note-avatar">MS</div>
+    <div class="editors-note-content">
+      <h3>A Note from the Editor</h3>
+      <p>Welcome to Maison Sarddinnah — where elegance meets inspiration. I believe that travel, style, beauty, and wellness aren't separate pursuits, but interconnected parts of a life lived with intention. Every article here is written to be genuinely useful — not just beautiful to look at.</p>
+      <p class="editors-note-signature">— The Maison Sarddinnah Team</p>
+    </div>
   </div>
-  <div class="card-grid">
-    <a href="blog/travel/solo-female-travel.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Travel · 2026 Guide</div>
-        <h3 class="card-title">The Ultimate Guide to Solo Female Travel in 2026</h3>
-        <p class="card-excerpt">Solo female travel in 2026 is more accessible and more empowering than ever.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/travel/slow-travel.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Travel · Intentional Living</div>
-        <h3 class="card-title">The Art of Slow Travel — Why Moving Less Means Experiencing More</h3>
-        <p class="card-excerpt">A complete reorientation of how you relate to a place. The philosophy and the practice.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/travel/mexico-city.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1518659526054-190340b32735?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Destination · CDMX 2026</div>
-        <h3 class="card-title">Mexico City Travel Guide 2026 — The Sophisticated Traveler's Guide to CDMX</h3>
-        <p class="card-excerpt">One of the most compelling travel destinations on earth, explained properly.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-  </div>
-</section>
+</div>
 
-<hr class="section-divider" />
+<!-- DESTINATION QUICK ACCESS -->
+<div class="destination-bar">
+  <div class="destination-bar-inner">
+    <h3>Explore by Destination</h3>
+    <div class="destination-links">
+      <a href="destinations/europe.html">Europe</a>
+      <a href="destinations/asia.html">Asia</a>
+      <a href="destinations/americas.html">Americas</a>
+      <a href="destinations/africa.html">Africa</a>
+      <a href="destinations/index.html">All Destinations →</a>
+    </div>
+  </div>
+</div>
 
-<!-- STYLE -->
-<section class="home-section">
-  <div class="section-header">
-    <h2>Style</h2>
-    <a href="sections/style.html" class="see-all">All Style →</a>
-  </div>
-  <div class="card-grid">
-    <a href="blog/style/10-effortless-style-rules-every-woman-should-know.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Style</div>
-        <h3 class="card-title">10 Effortless Style Rules Every Woman Should Know</h3>
-        <p class="card-excerpt">Style doesn't have to be complicated. The women who look best almost always follow the same quiet principles.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/style/the-capsule-wardrobe-guide-for-2026.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Style · Wardrobe</div>
-        <h3 class="card-title">The Capsule Wardrobe Guide for 2026</h3>
-        <p class="card-excerpt">A capsule wardrobe sounds restrictive until you try it — and then you realise it's actually the most freeing thing you can do.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/style/parisian-style-secrets-you-can-steal-today.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Style · Paris</div>
-        <h3 class="card-title">Parisian Style Secrets You Can Steal Today</h3>
-        <p class="card-excerpt">The Parisian woman has become a fashion myth — effortlessly chic, never overdone, somehow always looking perfectly put together.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-  </div>
-</section>
+<!-- MIXED EDITORIAL GRID -->
+<div class="section-header-editorial">
+  <h2>Latest Stories</h2>
+  <a href="blog/index.html">View All Articles →</a>
+</div>
 
-<hr class="section-divider" />
+<div class="editorial-grid">
+  <!-- Large Featured Card -->
+  <a href="blog/travel/solo-female-travel.html" class="post-card-enhanced card-large">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag travel">Travel · 2026 Guide</span>
+      <h3 class="card-title-enhanced">The Ultimate Guide to Solo Female Travel in 2026</h3>
+      <p class="card-excerpt-enhanced">Solo female travel in 2026 is more accessible, more connected, and more empowering than ever. Here's everything you need to know.</p>
+      <div class="card-meta">
+        <span>15 min read</span>
+        <a href="blog/travel/solo-female-travel.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
 
-<!-- BEAUTY -->
-<section class="home-section">
-  <div class="section-header">
-    <h2>Beauty</h2>
-    <a href="sections/beauty.html" class="see-all">All Beauty →</a>
-  </div>
-  <div class="card-grid">
-    <a href="blog/beauty/glow-cation.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Beauty · Travel Skincare</div>
-        <h3 class="card-title">The Glow-cation Guide — How to Travel for Your Skin & Your Glow</h3>
-        <p class="card-excerpt">How to protect your complexion, lean into humidity, and come home glowing.</p>
-        <span class="card-read">Read Article</span>
+  <!-- Standard Cards -->
+  <a href="blog/travel/slow-travel.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag travel">Travel · Intentional Living</span>
+      <h3 class="card-title-enhanced">The Art of Slow Travel</h3>
+      <p class="card-excerpt-enhanced">A complete reorientation of how you relate to a place. The philosophy and the practice.</p>
+      <div class="card-meta">
+        <span>8 min read</span>
+        <a href="blog/travel/slow-travel.html" class="card-read-more">Read Article</a>
       </div>
-    </a>
-    <a href="blog/beauty/skincare-mistakes-youre-probably-making.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Beauty · Skincare</div>
-        <h3 class="card-title">Skincare Mistakes You're Probably Making</h3>
-        <p class="card-excerpt">Even people with a solid skincare routine can be quietly undoing their own hard work.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/beauty/dermatologist-approved-anti-aging-tips.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Beauty · Anti-Aging</div>
-        <h3 class="card-title">Dermatologist-Approved Anti-Aging Tips</h3>
-        <p class="card-excerpt">The most effective anti-ageing advice from dermatologists is often the simplest — and the most ignored.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-  </div>
-</section>
+    </div>
+  </a>
 
-<hr class="section-divider" />
+  <a href="blog/travel/travel-groups.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag travel">Travel · Community</span>
+      <h3 class="card-title-enhanced">The Complete Guide to Female Travel Groups</h3>
+      <p class="card-excerpt-enhanced">The best female travel communities, group trip operators, and apps for safe and meaningful journeys.</p>
+      <div class="card-meta">
+        <span>10 min read</span>
+        <a href="blog/travel/travel-groups.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
 
-<!-- WELLNESS -->
-<section class="home-section">
-  <div class="section-header">
-    <h2>Wellness</h2>
-    <a href="sections/wellness.html" class="see-all">All Wellness →</a>
-  </div>
-  <div class="card-grid">
-    <a href="blog/wellness/morning-rituals-that-transform-your-day.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1499728603263-13726abce5fd?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Wellness · Morning Routine</div>
-        <h3 class="card-title">Morning Rituals That Transform Your Day</h3>
-        <p class="card-excerpt">The way you start your morning shapes everything that follows — and the science backs this up completely.</p>
-        <span class="card-read">Read Article</span>
+  <a href="blog/style/10-effortless-style-rules-every-woman-should-know.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag style">Style</span>
+      <h3 class="card-title-enhanced">10 Effortless Style Rules Every Woman Should Know</h3>
+      <p class="card-excerpt-enhanced">Style doesn't have to be complicated. The women who look best almost always follow the same quiet principles.</p>
+      <div class="card-meta">
+        <span>6 min read</span>
+        <a href="blog/style/10-effortless-style-rules-every-woman-should-know.html" class="card-read-more">Read Article</a>
       </div>
-    </a>
-    <a href="blog/wellness/the-science-of-better-sleep.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1531353826977-0941b4779a1c?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Wellness · Sleep</div>
-        <h3 class="card-title">The Science of Better Sleep</h3>
-        <p class="card-excerpt">Most of us know we should sleep better. What we're less clear on is why we can't manage it — and what actually works.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/wellness/how-to-build-a-self-care-routine-that-actually-sticks.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Wellness · Self-Care</div>
-        <h3 class="card-title">How to Build a Self-Care Routine That Actually Sticks</h3>
-        <p class="card-excerpt">Self-care has been so thoroughly aestheticised that it's easy to forget what it's actually for.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-  </div>
-</section>
+    </div>
+  </a>
 
-<hr class="section-divider" />
+  <a href="blog/style/the-capsule-wardrobe-guide-for-2026.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag style">Style · Wardrobe</span>
+      <h3 class="card-title-enhanced">The Capsule Wardrobe Guide for 2026</h3>
+      <p class="card-excerpt-enhanced">A capsule wardrobe sounds restrictive until you try it — and then you realise it's actually the most freeing thing you can do.</p>
+      <div class="card-meta">
+        <span>8 min read</span>
+        <a href="blog/style/the-capsule-wardrobe-guide-for-2026.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
 
-<!-- LIVING -->
-<section class="home-section">
-  <div class="section-header">
-    <h2>Living</h2>
-    <a href="sections/living.html" class="see-all">All Living →</a>
-  </div>
-  <div class="card-grid">
-    <a href="blog/living/small-space-decor-ideas-that-look-expensive.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Living · Interiors</div>
-        <h3 class="card-title">Small Space Decor Ideas That Look Expensive</h3>
-        <p class="card-excerpt">Small spaces are not a design problem — they're a design opportunity. Here's how to make the most of every square foot.</p>
-        <span class="card-read">Read Article</span>
+  <a href="blog/beauty/glow-cation.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag beauty">Beauty · Travel Skincare</span>
+      <h3 class="card-title-enhanced">The Glow-cation Guide</h3>
+      <p class="card-excerpt-enhanced">How to protect your complexion, lean into humidity, and come home glowing.</p>
+      <div class="card-meta">
+        <span>7 min read</span>
+        <a href="blog/beauty/glow-cation.html" class="card-read-more">Read Article</a>
       </div>
-    </a>
-    <a href="blog/living/interior-trends-dominating-2026.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Living · Design Trends</div>
-        <h3 class="card-title">Interior Trends Dominating 2026</h3>
-        <p class="card-excerpt">Interior design in 2026 is a study in warmth, intentionality, and a quiet pushback against clinical minimalism.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/living/how-to-create-a-cozy-home-aesthetic.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Living · Home</div>
-        <h3 class="card-title">How to Create a Cozy Home Aesthetic</h3>
-        <p class="card-excerpt">Cosiness isn't about a specific design style — it's a feeling, and like all feelings, it can be intentionally created.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-  </div>
-</section>
+    </div>
+  </a>
 
-<hr class="section-divider" />
+  <a href="blog/beauty/dermatologist-approved-anti-aging-tips.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag beauty">Beauty · Anti-Aging</span>
+      <h3 class="card-title-enhanced">Dermatologist-Approved Anti-Aging Tips</h3>
+      <p class="card-excerpt-enhanced">The most effective anti-ageing advice from dermatologists is often the simplest — and the most ignored.</p>
+      <div class="card-meta">
+        <span>6 min read</span>
+        <a href="blog/beauty/dermatologist-approved-anti-aging-tips.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
 
-<!-- DIGITAL -->
-<section class="home-section">
-  <div class="section-header">
-    <h2>Digital</h2>
-    <a href="sections/digital.html" class="see-all">All Digital →</a>
+  <a href="blog/wellness/morning-rituals-that-transform-your-day.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1499728603263-13726abce5fd?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag wellness">Wellness · Morning Routine</span>
+      <h3 class="card-title-enhanced">Morning Rituals That Transform Your Day</h3>
+      <p class="card-excerpt-enhanced">The way you start your morning shapes everything that follows — and the science backs this up completely.</p>
+      <div class="card-meta">
+        <span>5 min read</span>
+        <a href="blog/wellness/morning-rituals-that-transform-your-day.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
+
+  <a href="blog/wellness/the-science-of-better-sleep.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1531353826977-0941b4779a1c?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag wellness">Wellness · Sleep</span>
+      <h3 class="card-title-enhanced">The Science of Better Sleep</h3>
+      <p class="card-excerpt-enhanced">Most of us know we should sleep better. What we're less clear on is why we can't manage it — and what actually works.</p>
+      <div class="card-meta">
+        <span>7 min read</span>
+        <a href="blog/wellness/the-science-of-better-sleep.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
+
+  <a href="blog/living/small-space-decor-ideas-that-look-expensive.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag living">Living · Interiors</span>
+      <h3 class="card-title-enhanced">Small Space Decor Ideas That Look Expensive</h3>
+      <p class="card-excerpt-enhanced">Small spaces are not a design problem — they're a design opportunity. Here's how to make the most of every square foot.</p>
+      <div class="card-meta">
+        <span>8 min read</span>
+        <a href="blog/living/small-space-decor-ideas-that-look-expensive.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
+
+  <a href="blog/living/interior-trends-dominating-2026.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag living">Living · Design Trends</span>
+      <h3 class="card-title-enhanced">Interior Trends Dominating 2026</h3>
+      <p class="card-excerpt-enhanced">Interior design in 2026 is a study in warmth, intentionality, and a quiet pushback against clinical minimalism.</p>
+      <div class="card-meta">
+        <span>6 min read</span>
+        <a href="blog/living/interior-trends-dominating-2026.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
+
+  <a href="blog/digital/ai-travel-planning.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag digital">Digital · AI · 2026</span>
+      <h3 class="card-title-enhanced">How to Use AI to Plan the Perfect Trip</h3>
+      <p class="card-excerpt-enhanced">AI trip planning has matured from a party trick into a genuine travel tool worth using.</p>
+      <div class="card-meta">
+        <span>6 min read</span>
+        <a href="blog/digital/ai-travel-planning.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
+
+  <a href="blog/digital/how-to-build-a-digital-side-hustle.html" class="post-card-enhanced card-standard">
+    <div class="card-img-enhanced">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80" alt="" loading="lazy" />
+    </div>
+    <div class="card-content-enhanced">
+      <span class="card-tag digital">Digital · Side Hustle</span>
+      <h3 class="card-title-enhanced">How to Build a Digital Side Hustle</h3>
+      <p class="card-excerpt-enhanced">The digital economy has created genuinely accessible paths to supplemental income — if you approach them correctly.</p>
+      <div class="card-meta">
+        <span>8 min read</span>
+        <a href="blog/digital/how-to-build-a-digital-side-hustle.html" class="card-read-more">Read Article</a>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- TRENDING SECTION -->
+<div class="trending-section">
+  <div class="trending-section-inner">
+    <div class="trending-header">
+      <span class="eyebrow">Most Popular</span>
+      <h2>Trending This Week</h2>
+    </div>
+    <div class="trending-grid">
+      <div class="trending-item">
+        <div class="trending-number">01</div>
+        <h3>The Ultimate Guide to Solo Female Travel in 2026</h3>
+        <div class="meta">Travel · 15 min read</div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-number">02</div>
+        <h3>The Capsule Wardrobe Guide for 2026</h3>
+        <div class="meta">Style · 10 min read</div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-number">03</div>
+        <h3>Dermatologist-Approved Anti-Aging Tips</h3>
+        <div class="meta">Beauty · 8 min read</div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-number">04</div>
+        <h3>The Science of Better Sleep</h3>
+        <div class="meta">Wellness · 7 min read</div>
+      </div>
+    </div>
   </div>
-  <div class="card-grid">
-    <a href="blog/digital/ai-travel-planning.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Digital · AI · 2026</div>
-        <h3 class="card-title">How to Use AI to Plan the Perfect Trip in 2026</h3>
-        <p class="card-excerpt">AI trip planning has matured from a party trick into a genuine travel tool worth using.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/digital/how-to-build-a-digital-side-hustle.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Digital · Side Hustle</div>
-        <h3 class="card-title">How to Build a Digital Side Hustle</h3>
-        <p class="card-excerpt">The digital economy has created genuinely accessible paths to supplemental income — if you approach them correctly.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="blog/digital/the-truth-about-growing-on-tiktok-in-2026.html" class="post-card">
-      <div class="card-img"><img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&q=80" alt="" loading="lazy" /></div>
-      <div class="card-content">
-        <div class="card-cat">Digital · TikTok</div>
-        <h3 class="card-title">The Truth About Growing on TikTok in 2026</h3>
-        <p class="card-excerpt">TikTok is still one of the most powerful platforms for organic reach — but the strategies have changed significantly.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
+</div>
+
+<!-- ENHANCED NEWSLETTER BANNER -->
+<div class="newsletter-banner-enhanced">
+  <div class="inner">
+    <div class="eyebrow">The Maison Edit</div>
+    <h2>Weekly Inspiration, Every Thursday</h2>
+    <p>Travel finds, beauty picks, and the reads worth your time — delivered once a week, beautifully. Join 10,000+ elegant readers.</p>
+    <form class="newsletter-form-enhanced" onsubmit="return false;">
+      <input type="email" placeholder="Your email address" required />
+      <button type="submit">Subscribe Free</button>
+    </form>
   </div>
-</section>
+</div>
 
 <!-- ABOUT STRIP -->
 <div class="about-strip">
@@ -371,17 +401,6 @@
   <h2>For the Woman Who Moves Through the World with Intention</h2>
   <p>We write about travel, style, beauty, wellness, and the digital tools that make modern life more elegant. Every article is written to be genuinely useful — not just beautiful to look at.</p>
   <a href="about.html" class="btn-gold">Our Story →</a>
-</div>
-
-<!-- NEWSLETTER -->
-<div class="newsletter-banner">
-  <div class="eyebrow">The Maison Edit</div>
-  <h2>Weekly Inspiration, Every Thursday</h2>
-  <p>Travel finds, beauty picks, and the reads worth your time — delivered once a week, beautifully.</p>
-  <form class="newsletter-form" onsubmit="return false;">
-    <input type="email" placeholder="Your email address" required />
-    <button type="submit">Subscribe</button>
-  </form>
 </div>
 
 <footer>
