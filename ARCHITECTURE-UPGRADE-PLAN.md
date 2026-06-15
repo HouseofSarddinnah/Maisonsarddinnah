@@ -300,3 +300,361 @@ Add to each article:
 - Preserve brand identity while enhancing presentation
 - Implement incrementally to maintain site stability
 - Test each phase before proceeding to next
+
+---
+
+## 🧠 Core Editorial Engine (CRITICAL SYSTEM LAYER)
+
+### Overview
+This is the missing foundation of the website architecture. Every article MUST now follow BOTH:
+- **Category** (Travel / Style / Beauty / Wellness / Living / Digital)
+- **AND Editorial Role** (MANDATORY)
+
+---
+
+### 13.1 Four Editorial Roles System (CRITICAL)
+
+Every single article MUST be assigned ONE of the following roles:
+
+#### 1. 🏛 PILLAR ARTICLE (SEO AUTHORITY)
+
+**Definition**: Evergreen, high-ranking, SEO-driven guides that anchor clusters.
+
+**Examples**:
+- "Mexico City Travel Guide 2026"
+- "Complete Guide to Japan Travel"
+
+**Rules**:
+- Long-form (SEO-heavy)
+- Must contain many internal links
+- Must act as cluster hub
+- Must appear in navigation hubs + destination hubs
+
+#### 2. ✨ FEATURE STORY (BRAND IDENTITY CORE)
+
+**Definition**: Narrative journalism, emotional storytelling, human travel experiences.
+
+**Examples**:
+- "Jamaica: A Story of Light, Music & Memory"
+- "Marbella in the 80s: The Lost Golden Coast"
+
+**Rules**:
+- First-person or observer voice
+- Strong emotional tone
+- NOT SEO-robotic
+- High Pinterest shareability
+- Must link to at least 1 Pillar page
+
+#### 3. 🌍 DISCOVERY POST (VIRAL / PINTEREST ENGINE)
+
+**Definition**: Visually driven, exploratory travel content designed for discovery traffic.
+
+**Examples**:
+- "Hidden Streets of Rio de Janeiro You've Never Seen"
+- "The Secret Castle Towns of Europe"
+
+**Rules**:
+- Shorter than Pillars
+- Highly visual structure (scannable sections)
+- Pinterest-first formatting
+- Must link upward to Pillar page
+
+#### 4. 🪶 ESSAY / PHILOSOPHY (EDITORIAL DEPTH LAYER)
+
+**Definition**: Reflective travel thinking, slow travel, identity, culture, emotion.
+
+**Examples**:
+- "Why We Travel Alone Before We Travel Together"
+- "The Emotional Geography of Cities"
+
+**Rules**:
+- No hard SEO requirement
+- Deep introspection tone
+- Strong brand voice shaping
+- Must link to at least 1 Pillar OR Feature Story
+
+**⚠️ RULE: NO ARTICLE EXISTS WITHOUT A ROLE**
+
+Every page MUST declare in HTML:
+```html
+<meta name="editorial-role" content="pillar | feature | discovery | essay">
+```
+
+If missing → article is INVALID in system.
+
+---
+
+### 13.2 Internal Linking Intelligence System (UPGRADED RULESET)
+
+Replace simple internal linking with structured "3-LAYER LINK LOGIC":
+
+Every article MUST include:
+
+#### 1. ⬆️ UPWARD LINK (Authority)
+Link to: Pillar page of its destination cluster
+
+**Example**: Rio discovery → Brazil Pillar Guide
+
+#### 2. ↔️ SIDEWAYS LINK (SAME ROLE MATCH)
+Link to: Same editorial role in another destination
+
+**Example**: Discovery post → another Discovery post (Mexico / Japan / Europe)
+
+#### 3. ⬇️ DOWNWARD LINK (MONETIZATION)
+Link to: Travel tools, booking pages, affiliates, resources
+
+**Examples**:
+- eSIM guides
+- Flight booking tools
+- Hotel platforms
+- Insurance
+
+---
+
+### 13.3 Editorial Voice Control System (NEW REQUIRED LAYER)
+
+Each article MUST declare ONE voice mode:
+
+Add in HTML meta:
+```html
+<meta name="editorial-voice" content="observer | traveler | historian | insider | curator">
+```
+
+**Voice definitions**:
+- **observer** → cinematic, descriptive, external perspective
+- **traveler** → personal experience, "I was there"
+- **historian** → cultural + historical framing
+- **insider** → exclusive, local knowledge tone
+- **curator** → aesthetic selection, editorial taste
+
+**RULE**: Do NOT mix voices randomly — pick ONE per article.
+
+---
+
+### 13.4 Monetization Matching Engine (STRUCTURED LOGIC)
+
+Each article type MUST map to monetization types:
+
+#### 🏛 Pillar Articles:
+- Flights (Aviasales)
+- Hotels
+- Insurance
+- eSIM (Airalo, Yesim)
+
+#### ✨ Feature Stories:
+- Tours (GetYourGuide, Klook, KKday)
+- Experiences
+- Unique local bookings
+
+#### 🌍 Discovery Posts:
+- Visual products
+- Luggage
+- Travel accessories
+- Aesthetic Amazon picks
+
+#### 🪶 Essays:
+- Soft monetization only
+- Minimal links
+- Journal-style products (optional)
+
+**RULE**: Do NOT mix monetization types outside their category.
+
+---
+
+### 13.5 Global Brand Core Sentence (LOCK IDENTITY)
+
+Set ONE permanent brand definition in site metadata:
+```html
+<meta name="brand-core" content="Maison Sarddinnah is a luxury travel editorial publication blending destination guides, narrative journalism, and aesthetic travel essays into a magazine-style digital experience.">
+```
+
+This must appear site-wide.
+
+---
+
+### 13.6 Final System Behavior Rule
+
+After implementation, the website must function as:
+
+👉 A structured editorial intelligence system, NOT a blog
+
+Every article must now be:
+- Classified (role)
+- Linked (3-link rule)
+- Voiced (one tone)
+- Monetized (mapped system)
+- Positioned (SEO or editorial function)
+
+---
+
+### 🚀 Result Expectation (IMPORTANT)
+
+After applying this system, Maison Sarddinnah becomes:
+- A travel magazine, not a blog
+- A clustered SEO authority system
+- A Pinterest-native editorial platform
+- A monetization-structured content engine
+- A scalable publication system
+
+14. 🧠 EDITORIAL OPERATING SYSTEM (GLOBAL CONTROL LAYER)
+
+This section defines how the entire website behaves as a system, not just a collection of pages.
+
+14.1 WEBSITE IS NOW A “CONTENT ENGINE”, NOT A SITE
+
+Treat Maison Sarddinnah as:
+
+👉 A living editorial machine
+NOT a static website
+
+This means:
+
+Every page must serve a FUNCTION in the ecosystem
+No page exists in isolation
+Every article is part of a cluster logic system
+14.2 ARTICLE VALIDATION RULE (STRICT SYSTEM CHECK)
+
+Before Devin finalizes ANY page, it MUST verify:
+
+✔ Has category assigned
+✔ Has editorial role assigned
+✔ Has editorial voice assigned
+✔ Has 3-link internal linking system
+✔ Has monetization category alignment
+✔ Has destination or thematic cluster assignment
+
+If ANY is missing → page is considered INCOMPLETE
+
+14.3 CONTENT CLUSTER RULE (NEW SEO ENGINE LAYER)
+
+All content must belong to ONE of these cluster types:
+
+A. 🌍 DESTINATION CLUSTER
+
+Example:
+
+Japan Cluster
+Mexico Cluster
+Europe Cluster
+
+Contains:
+
+1 Pillar article (hub)
+3–8 Discovery posts
+1–3 Feature stories
+optional essays
+B. 🧭 LIFESTYLE CLUSTER
+
+Example:
+
+Slow Travel
+Solo Travel
+Luxury Travel Mindset
+
+Contains:
+
+Feature stories
+Essays
+Select discovery posts
+C. 💰 MONETIZATION CLUSTER
+
+Example:
+
+Travel Tools
+Packing Essentials
+Booking Systems
+
+Contains:
+
+Pillar support articles
+Resource pages
+Affiliate-heavy content
+14.4 CLUSTER RULE: NO ISOLATED CONTENT
+
+If a page does NOT belong to a cluster:
+
+→ It must be reclassified OR removed from navigation prominence
+
+This ensures:
+
+No orphan SEO pages
+Strong internal authority flow
+Better ranking structure
+14.5 HOMEPAGE NOW FUNCTIONS AS “EDITORIAL CONDUCTOR”
+
+Homepage must:
+
+Pull 1 article from each cluster type
+Rotate FEATURED content weekly/monthly
+Always prioritize:
+Pillar content (SEO)
+Feature stories (brand identity)
+Discovery posts (traffic)
+Essays (depth layer)
+
+Homepage is NOT static — it is a curated editorial feed
+
+14.6 INTERNAL LINK PRIORITY WEIGHT SYSTEM (NEW RULE)
+
+When generating internal links:
+
+Priority order MUST be:
+
+SAME DESTINATION PILLAR (highest authority)
+SAME EDITORIAL ROLE (horizontal discovery)
+SAME CLUSTER TYPE (thematic reinforcement)
+MONETIZATION LINKS (lowest but necessary)
+14.7 CONTENT SCORING SYSTEM (FOR FUTURE SCALING)
+
+Each article is internally scored (not displayed publicly):
+
+Pillar = 4 points
+Feature Story = 3 points
+Discovery Post = 2 points
+Essay = 1 point
+
+This determines:
+
+Homepage visibility priority
+Internal linking strength
+SEO authority distribution
+14.8 EDITORIAL CONSISTENCY RULE (QUALITY CONTROL)
+
+Every article must pass:
+
+✔ Clear narrative structure
+✔ One dominant emotional tone
+✔ Strong visual hierarchy
+✔ No category blending confusion
+✔ Clear purpose in ecosystem
+
+If unclear → article must be rewritten or reclassified
+
+14.9 SYSTEM BEHAVIOR SUMMARY (FINAL STATE)
+
+After full implementation, Maison Sarddinnah behaves as:
+
+👉 A multi-layer editorial intelligence system
+NOT a blog
+NOT a portfolio
+NOT a static site
+
+It becomes:
+
+SEO authority engine (Pillars)
+Narrative magazine (Feature Stories)
+Pinterest discovery machine (Discovery Posts)
+Thought leadership platform (Essays)
+Monetization ecosystem (Affiliate integration)
+14.10 FINAL EXECUTION INSTRUCTION FOR DEVIN
+
+When applying changes:
+
+Do NOT simplify system
+Do NOT merge roles
+Do NOT remove metadata layers
+Do NOT flatten hierarchy
+
+Instead:
+
+👉 Preserve complexity → because structure = SEO power + monetization scaling

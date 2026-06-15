@@ -1,0 +1,454 @@
+/* =========================
+   MAISON SARDDINNAH KYOTO CLUSTER
+   LEVEL 4 — LUXURY EDITORIAL + MONETIZATION SYSTEM
+   ========================= */
+
+/* ─────────────────────────
+   DESIGN TOKENS (SYSTEM CORE)
+───────────────────────── */
+
+:root {
+  /* Colors */
+  --bg: #0b0f14;
+  --surface: #111823;
+  --surface-2: #151f2e;
+  --card: #151f2e;
+
+  --gold: #c8a96a;
+  --gold-soft: rgba(200,169,106,0.15);
+
+  --text: #e8edf2;
+  --muted: #a7b0bb;
+
+  --border: rgba(255,255,255,0.08);
+
+  --success: #4a6b5a;
+  --warning: #b85c38;
+
+  /* Layout */
+  --radius-sm: 10px;
+  --radius: 18px;
+  --radius-lg: 28px;
+
+  /* Spacing System (CRITICAL UPGRADE) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Typography */
+  --font-main: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --line: 1.6;
+}
+
+/* ─────────────────────────
+   BASE RESET
+───────────────────────── */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  line-height: var(--line);
+}
+
+/* ─────────────────────────
+   TYPOGRAPHY SYSTEM (SEO READY)
+───────────────────────── */
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  letter-spacing: 0.3px;
+  color: var(--text);
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--space-4);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  margin-top: var(--space-12);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: var(--space-8);
+  color: var(--gold);
+}
+
+p {
+  color: var(--muted);
+  margin-bottom: var(--space-4);
+}
+
+/* ─────────────────────────
+   LAYOUT SYSTEM
+───────────────────────── */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--space-6);
+}
+
+/* ─────────────────────────
+   HERO SYSTEM (EDITORIAL LUXURY)
+───────────────────────── */
+
+.hero {
+  padding: var(--space-16) var(--space-6);
+  text-align: center;
+  background: radial-gradient(circle at top, var(--gold-soft), transparent 60%);
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+/* ─────────────────────────
+   CARDS SYSTEM (CONTENT MODULES)
+───────────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-6);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--gold);
+}
+
+/* ─────────────────────────
+   TABLE SYSTEM (SEO + COMPARISON ENGINE)
+───────────────────────── */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-6);
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+td, th {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--gold);
+  text-align: left;
+}
+
+/* ─────────────────────────
+   BUTTON SYSTEM (CONVERSION ENGINE)
+───────────────────────── */
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: var(--gold);
+  color: var(--bg);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* ─────────────────────────
+   AFFILIATE SYSTEM (LEVEL 4 MONETIZATION LAYER)
+───────────────────────── */
+
+.affiliate-box {
+  margin: var(--space-12) 0;
+  padding: var(--space-6);
+  background: var(--gold-soft);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+}
+
+.affiliate-box strong {
+  color: var(--text);
+}
+
+/* ─────────────────────────
+   INTERNAL LINKS (SEO NETWORKING)
+───────────────────────── */
+
+.internal-links a {
+  color: var(--gold);
+  margin-right: var(--space-3);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.internal-links a:hover {
+  color: var(--text);
+}
+
+/* ─────────────────────────
+   EDITORIAL COMPONENTS (NEW LEVEL 4 ADDITIONS)
+───────────────────────── */
+
+/* Pull Quote (SEO engagement booster) */
+.pullquote {
+  border-left: 3px solid var(--gold);
+  padding: var(--space-6);
+  margin: var(--space-12) 0;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--text);
+  background: rgba(255,255,255,0.02);
+}
+
+/* Tip Box (SEO retention block) */
+.tip-box {
+  margin: var(--space-8) 0;
+  padding: var(--space-6);
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.tip-box strong {
+  color: var(--gold);
+}
+
+/* Section Divider (UX pacing) */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: var(--space-12) 0;
+}
+
+/* ─────────────────────────
+   RESPONSIVE SYSTEM
+───────────────────────── */
+
+@media (max-width: 768px) {
+  .container {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 50px;
+}
+
+p {
+  color: var(--muted);
+}
+
+/* Hero */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, var(--gold-soft), transparent 60%);
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--gold);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+td, th {
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--gold);
+  text-align: left;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: var(--gold);
+  color: #0b0f14;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Affiliate box */
+.affiliate-box {
+  margin: 40px 0;
+  padding: 20px;
+  background: var(--gold-soft);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+}
+
+/* Footer nav links */
+.internal-links a {
+  color: var(--gold);
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+/* ─────────────────────────
+   KYOTO HUB NAVIGATION BLOCK (CLUSTER SYSTEM)
+───────────────────────── */
+
+.kyoto-hub-nav {
+  margin: var(--space-12) 0;
+  padding: var(--space-6);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.kyoto-hub-nav h3 {
+  margin: 0 0 var(--space-4) 0;
+  font-size: 1rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.hub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.hub-link {
+  display: inline-block;
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface-2);
+  color: var(--muted);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border);
+}
+
+.hub-link:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+
+.hub-link.pillar {
+  background: rgba(200,169,106,0.1);
+  color: var(--gold);
+  border-color: var(--gold);
+  font-weight: 600;
+}
+
+.hub-link.editorial {
+  background: rgba(74,107,90,0.1);
+  color: var(--success);
+  border-color: var(--success);
+  font-weight: 600;
+}
+
+.hub-link.active {
+  background: var(--gold);
+  color: var(--bg);
+  border-color: var(--gold);
+  font-weight: 600;
+}

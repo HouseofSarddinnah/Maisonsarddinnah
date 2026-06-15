@@ -1,0 +1,64 @@
+{
+  "kyoto": {
+    "kyoto-travel-guide.html": {
+      "keyword": "kyoto travel guide",
+      "intent": "informational",
+      "status": "active"
+    },
+    "kyoto-editorial-guide.html": {
+      "keyword": "kyoto editorial guide",
+      "intent": "editorial",
+      "status": "active"
+    },
+    "kyoto-3-day-itinerary.html": {
+      "keyword": "kyoto 3-day itinerary",
+      "intent": "commercial informational",
+      "status": "active"
+    },
+    "3-day-kyoto-itinerary.html": {
+      "keyword": "3-day kyoto itinerary",
+      "intent": "commercial informational",
+      "status": "redirect_to_kyoto-3-day-itinerary.html"
+    },
+    "best-day-trips-from-kyoto.html": {
+      "keyword": "best day trips from kyoto",
+      "intent": "commercial informational",
+      "status": "active"
+    },
+    "day-trips-kyoto.html": {
+      "keyword": "best day trips from kyoto",
+      "intent": "commercial informational",
+      "status": "redirect_to_best-day-trips-from-kyoto.html"
+    },
+    "best-luxury-hotels-kyoto.html": {
+      "keyword": "best luxury hotels kyoto",
+      "intent": "commercial",
+      "status": "active"
+    },
+    "luxury-hotels-kyoto.html": {
+      "keyword": "best luxury hotels kyoto",
+      "intent": "commercial",
+      "status": "redirect_to_best-luxury-hotels-kyoto.html"
+    },
+    "best-ryokans-kyoto.html": {
+      "keyword": "best ryokans kyoto",
+      "intent": "commercial",
+      "status": "active"
+    },
+    "where-to-stay-kyoto.html": {
+      "keyword": "where to stay kyoto",
+      "intent": "commercial informational",
+      "status": "active"
+    },
+    "15-unmissable-experiences-kyoto.html": {
+      "keyword": "things to do kyoto",
+      "intent": "commercial informational",
+      "status": "active"
+    },
+    "things-to-do-kyoto.html": {
+      "keyword": "things to do kyoto",
+      "intent": "commercial informational",
+      "status": "redirect_to_15-unmissable-experiences-kyoto.html"
+    }
+  }
+}
