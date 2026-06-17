@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guides — Maison Sarddinnah</title>
-  <meta name="description" content="Comprehensive destination guides and travel planning resources." />
+  <title>Travel — Maison Sarddinnah</title>
+  <meta name="description" content="Destination guides, solo travel, slow travel, and every adventure worth taking." />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/theme.css" />
   <link rel="stylesheet" href="../assets/css/editorial.css" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--pink:#ff6f91;--pink-dk:#ff5078;--gold:#c9a96e;--dark:#1a1a1a;--muted:#666;--bg:#fff;--border:#ebebeb;--max:1200px;--accent:#c9a96e}
+    :root{--pink:#ff6f91;--pink-dk:#ff5078;--dark:#1a1a1a;--muted:#666;--bg:#fff;--border:#ebebeb;--max:1200px;--accent:#c9a96e}
     body{font-family:'Montserrat',sans-serif;color:var(--dark);background:var(--bg);line-height:1.6}
     a{text-decoration:none;color:inherit}
     .site-nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--border)}
@@ -87,7 +87,7 @@
       <a href="../sections/wellness.html">Wellness</a>
       <a href="../sections/living.html">Living</a>
       <a href="../sections/digital.html">Digital</a>
-      <a href="../sections/guides.html" class="active">Guides</a>
+      <a href="../sections/guides.html">Guides</a>
       <a href="../sections/tips.html">Tips</a>
       <a href="../sections/reviews.html">Reviews</a>
       <a href="../sections/stories.html">Stories</a>
@@ -101,78 +101,212 @@
   </div>
 </nav>
 <div class="section-hero">
-  <div class="eyebrow">📚 Maison Sarddinnah</div>
-  <h1>Guides</h1>
-  <p>Comprehensive destination guides and travel planning resources.</p>
+  <div class="eyebrow">🌍 Maison Sarddinnah</div>
+  <h1>Travel</h1>
+  <p>Destination guides, solo travel, slow travel, and every adventure worth taking.</p>
 </div>
+
+<!-- SEO FALLBACK CONTENT (STATIC - INDEXABLE BY GOOGLE) -->
+<!-- BUILD:INSERT_NOSCRIPT_FALLBACK -->
+
+<!-- SEO STATIC BASE (VISIBLE, INDEXABLE) -->
+<!-- BUILD:INSERT_STATIC_GRID -->
+
+<!-- FEATURED ARTICLES -->
+<div class="featured-section">
+  <div class="featured-inner">
+    <div class="featured-header">
+      <h2>Featured Guides</h2>
+      <p>Our most comprehensive travel guides and itineraries</p>
+    </div>
+    <div class="featured-grid">
+      <!-- BUILD:INSERT_FEATURED_SECTION -->
+    </div>
+  </div>
+</div>
+
+<style>
+  .featured-section {
+    background: linear-gradient(135deg, #f5f2ee 0%, #ede8e0 100%);
+    padding: 60px 24px;
+  }
+  .featured-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .featured-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .featured-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--dark);
+  }
+  .featured-header p {
+    color: var(--muted);
+    font-size: 1rem;
+  }
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    gap: 24px;
+  }
+  @media (max-width: 900px) {
+    .featured-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 560px) {
+    .featured-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .featured-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+  }
+  .featured-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  .featured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .featured-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: var(--accent);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .featured-content {
+    padding: 24px;
+  }
+  .featured-cat {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .featured-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--dark);
+  }
+  .featured-content p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* SEO STATIC GRID STYLING */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 40px 0;
+  }
+  .blog-card {
+    background: #fff;
+    border: 1px solid #e8e0d4;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  }
+  .blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .blog-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .blog-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark);
+    padding: 20px;
+    margin: 0;
+    line-height: 1.4;
+  }
+  @media (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+  }
+</style>
+
 <div class="articles-wrap">
-  <div class="card-grid with-featured">
-    <a href="../blog/travel/dubai-travel-guide-2026.html" class="post-card reveal">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80" alt="" loading="lazy" />
+  <!-- DYNAMIC GRID (JS RENDERED - UX LAYER ONLY) -->
+  <div id="dynamic-blog-grid" class="card-grid with-featured">
+    <!-- Articles will be loaded dynamically from /data/posts.json -->
+  </div>
+</div>
+
+<!-- DESTINATION SHOWCASE -->
+<div class="destination-showcase">
+  <div class="destination-showcase-inner">
+    <div class="destination-showcase-header">
+      <h2>Explore by Destination</h2>
+      <p>Discover our curated travel guides across the world's most inspiring destinations.</p>
+    </div>
+    <div class="destination-showcase-grid">
+      <div class="destination-showcase-card">
+        <div class="emoji">🏰</div>
+        <h4>Europe</h4>
+        <p>London, Marbella</p>
+        <a href="../destinations/europe.html">Explore →</a>
       </div>
-      <div class="card-content">
-        <div class="card-cat" style="color:#c9a96e;">Travel · Guide</div>
-        <h3 class="card-title">Dubai Travel Guide 2026: The Complete Luxury & Family Guide</h3>
-        <p class="card-excerpt">Few cities reward a little planning quite like Dubai. Get the timing, the neighbourhood and the bookings right and it delivers some of the most effortless luxury.</p>
-        <span class="card-read">Read Article</span>
+      <div class="destination-showcase-card">
+        <div class="emoji">🏯</div>
+        <h4>Asia</h4>
+        <p>Osaka, Bali</p>
+        <a href="../destinations/asia.html">Explore →</a>
       </div>
-    </a>
-    <a href="../blog/travel/osaka-travel-guide-2026.html" class="post-card reveal">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=800&q=80" alt="" loading="lazy" />
+      <div class="destination-showcase-card">
+        <div class="emoji">🌎</div>
+        <h4>Americas</h4>
+        <p>Mexico City, Jamaica</p>
+        <a href="../destinations/americas.html">Explore →</a>
       </div>
-      <div class="card-content">
-        <div class="card-cat" style="color:#c9a96e;">Travel · Guide</div>
-        <h3 class="card-title">The Ultimate Osaka Travel Guide for First-Time Visitors</h3>
-        <p class="card-excerpt">Osaka is loud, delicious, neon-lit, and unforgettable — a city that grabs you and never lets go.</p>
-        <span class="card-read">Read Article</span>
+      <div class="destination-showcase-card">
+        <div class="emoji">🌍</div>
+        <h4>Africa</h4>
+        <p>Regional guides</p>
+        <a href="../destinations/africa.html">Explore →</a>
       </div>
-    </a>
-    <a href="../blog/travel/kyoto-travel-guide.html" class="post-card reveal">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80" alt="" loading="lazy" />
-      </div>
-      <div class="card-content">
-        <div class="card-cat" style="color:#c9a96e;">Travel · Guide</div>
-        <h3 class="card-title">Kyoto Travel Guide</h3>
-        <p class="card-excerpt">A comprehensive guide to exploring Kyoto's temples, gardens, and traditional culture.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="../blog/travel/mexico-city.html" class="post-card reveal">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1518659526054-190340b32735?w=800&q=80" alt="" loading="lazy" />
-      </div>
-      <div class="card-content">
-        <div class="card-cat" style="color:#c9a96e;">Travel · Guide</div>
-        <h3 class="card-title">Mexico City Travel Guide 2026 — The Sophisticated Traveler's Guide to CDMX</h3>
-        <p class="card-excerpt">One of the most compelling travel destinations on earth, explained properly. From historic neighborhoods to world-class dining.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="../blog/travel/kyoto-3-day-itinerary.html" class="post-card reveal">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80" alt="" loading="lazy" />
-      </div>
-      <div class="card-content">
-        <div class="card-cat" style="color:#c9a96e;">Travel · Itinerary</div>
-        <h3 class="card-title">3-Day Kyoto Itinerary</h3>
-        <p class="card-excerpt">The perfect 3-day itinerary for exploring Kyoto's highlights.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
-    <a href="../blog/travel/kyoto-3-day-itinerary.html" class="post-card reveal">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80" alt="" loading="lazy" />
-      </div>
-      <div class="card-content">
-        <div class="card-cat" style="color:#c9a96e;">Travel · Itinerary</div>
-        <h3 class="card-title">Kyoto 3-Day Itinerary</h3>
-        <p class="card-excerpt">A detailed 3-day itinerary covering Kyoto's must-see attractions.</p>
-        <span class="card-read">Read Article</span>
-      </div>
-    </a>
+    </div>
   </div>
 </div>
 
@@ -204,6 +338,20 @@
   </div>
   <small>© 2026 Maison Sarddinnah. All rights reserved.</small>
 </footer>
-<script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/blog-index.js"></script>
+  <script>
+    // UX LAYER ONLY - Dynamic rendering for filtering and enhanced UX
+    document.addEventListener('DOMContentLoaded', async function() {
+      await blogIndex.loadPosts();
+      
+      // Render all travel articles into dynamic container (UX enhancement only)
+      const travelPosts = blogIndex.getPostsByCategory('travel');
+      const cardGrid = document.getElementById('dynamic-blog-grid');
+      if (cardGrid && travelPosts.length > 0) {
+        cardGrid.innerHTML = travelPosts.map(post => renderPostCard(post)).join('');
+      }
+    });
+  </script>
 </body>
 </html>

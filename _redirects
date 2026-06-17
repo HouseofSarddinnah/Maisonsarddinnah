@@ -5,6 +5,10 @@
 #       local VS Code dev server compatibility.
 # ================================================
 
+# FORCE WWW → NON-WWW (CRITICAL SEO RULE)
+https://www.maisonsarddinnah.com/* https://maisonsarddinnah.com/:splat 301!
+http://www.maisonsarddinnah.com/* https://maisonsarddinnah.com/:splat 301!
+
 # Old URL patterns → new structure
 /hidden-gems---europe.html        /blog/travel/hidden-gems-europe.html    301
 /beauty-blog.html                 /blog/beauty/article-1.html             301

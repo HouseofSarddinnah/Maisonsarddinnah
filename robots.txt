@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://maisonsarddinnah.com/sitemap.xml
+
+# Disallow sensitive areas
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /tmp/
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
