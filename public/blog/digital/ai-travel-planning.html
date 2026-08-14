@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Use AI to Plan the Perfect Trip in 2026 — Smarter, Faster, More Personal | Maison Sarddinnah</title>
+  <meta name="description" content="AI has changed the way we plan travel — here's how to use it intelligently to build an itinerary that actually fits your life, your style, and your budget." />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Jost', sans-serif; font-weight: 300; color: #1c2230; background: #f7f8fa; line-height: 1.85; }
+    .article-hero { background: linear-gradient(150deg, #0f1724 0%, #1e2d45 60%, #2a3f5e 100%); color: #eef2f7; padding: 90px 24px 80px; text-align: center; }
+    .article-hero .category { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: #7eb8e8; margin-bottom: 20px; }
+    .article-hero h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.2; max-width: 860px; margin: 0 auto 24px; }
+    .article-hero .subtitle { font-size: 1.05rem; color: #b0bfd4; max-width: 580px; margin: 0 auto 32px; font-weight: 300; }
+    .article-hero .meta { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #6a7e96; }
+    .article-body { max-width: 760px; margin: 0 auto; padding: 60px 24px 80px; }
+    h2 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 1.9rem; color: #1c2230; margin: 56px 0 20px; line-height: 1.3; }
+    h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 1.35rem; color: #2a3a50; margin: 36px 0 14px; font-style: italic; }
+    p { margin-bottom: 22px; font-size: 1.03rem; color: #2e3d52; }
+    .intro-pull { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 300; font-style: italic; color: #3a4f6a; line-height: 1.65; border-left: 2px solid #7eb8e8; padding-left: 28px; margin: 40px 0; }
+    .affiliate-box { background: #eef3fa; border: 1px solid #ccd9eb; border-radius: 4px; padding: 32px; margin: 44px 0; }
+    .affiliate-box .box-label { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #5a9fd4; font-weight: 500; margin-bottom: 14px; }
+    .affiliate-box h3 { font-size: 1.25rem; margin: 0 0 14px; font-style: normal; color: #1c2230; }
+    .affiliate-box p { font-size: 0.97rem; margin-bottom: 16px; }
+    .affiliate-link { display: inline-block; background: #1e2d45; color: #eef2f7; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; padding: 12px 28px; text-decoration: none; font-family: 'Jost', sans-serif; font-weight: 500; }
+    .affiliate-link:hover { background: #7eb8e8; color: #1c2230; }
+    .step-list { counter-reset: steps; margin: 36px 0; }
+    .step-item { counter-increment: steps; display: flex; gap: 24px; margin-bottom: 32px; align-items: flex-start; }
+    .step-num { flex-shrink: 0; width: 44px; height: 44px; background: #1e2d45; color: #7eb8e8; font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; }
+    .step-content h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: #1c2230; margin-bottom: 8px; }
+    .step-content p { margin-bottom: 0; font-size: 0.97rem; }
+    .prompt-box { background: #1e2d45; color: #eef2f7; padding: 28px 32px; margin: 32px 0; border-radius: 2px; }
+    .prompt-box .prompt-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #7eb8e8; margin-bottom: 12px; }
+    .prompt-box p { color: #c8d8ec; font-size: 0.95rem; font-style: italic; margin-bottom: 0; }
+    .faq-section { margin: 56px 0 0; }
+    .faq-item { border-top: 1px solid #ccd9eb; padding: 24px 0; }
+    .faq-item:last-child { border-bottom: 1px solid #ccd9eb; }
+    .faq-item h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: #1c2230; margin-bottom: 12px; }
+    .faq-item p { font-size: 0.97rem; margin-bottom: 0; }
+    .pinterest-section { background: #1e2d45; color: #eef2f7; padding: 40px; margin: 60px 0 0; }
+    .pinterest-section h3 { color: #7eb8e8; font-size: 1rem; font-style: normal; margin: 0 0 16px; letter-spacing: 0.15em; text-transform: uppercase; }
+    .pinterest-section ul { list-style: none; padding: 0; }
+    .pinterest-section li { font-size: 0.95rem; color: #b0bfd4; padding: 6px 0; padding-left: 18px; position: relative; }
+    .pinterest-section li::before { content: "→"; position: absolute; left: 0; color: #7eb8e8; }
+    .divider { width: 48px; height: 1px; background: #7eb8e8; margin: 48px 0; }
+  
+    /* ── INLINE IMAGES ── */
+    .inline-img { margin: 2.4rem 0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.10); }
+    .inline-img img { width: 100%; height: 360px; object-fit: cover; display: block; }
+    .img-caption { font-size: 0.78rem; color: #999; text-align: center; padding: 8px 12px; background: #f9f7f4; font-style: italic; }
+
+    /* ── RELATED READS ── */
+    .related-reads-section { margin: 48px 0 0; padding-top: 40px; border-top: 1px solid #e8e0d4; }
+    .related-reads-heading { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 500; margin-bottom: 20px; border: none; padding: 0; }
+    .related-reads-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    @media (max-width: 680px) { .related-reads-grid { grid-template-columns: 1fr; } }
+    .related-card { display: flex; flex-direction: column; padding: 20px 22px; background: #fff; border: 1px solid #e8e0d4; border-radius: 6px; transition: transform 0.2s, box-shadow 0.2s; }
+    .related-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.09); }
+    .related-card-label { font-size: 9.5px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; color: #c9a96e; margin-bottom: 8px; }
+    .related-card-title { font-family: 'Playfair Display', serif; font-size: 0.97rem; font-weight: 500; color: #1a1a1a; line-height: 1.4; margin-bottom: 14px; flex: 1; transition: color 0.2s; }
+    .related-card:hover .related-card-title { color: #ff6f91; }
+    .related-card-link { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: #c9a96e; border-bottom: 1px solid #e8d5b0; padding-bottom: 2px; display: inline-block; align-self: flex-start; }
+
+    /* ── TRAVELPAYOUTS WIDGET BLOCK ── */
+    .tp-widget-block { margin: 36px 0; }
+    .tp-widget-inner { display: flex; align-items: center; gap: 16px; background: linear-gradient(135deg, #f8f4ee, #fff8f0); border: 1px solid #e8d5b0; border-radius: 8px; padding: 20px 24px; flex-wrap: wrap; }
+    .tp-widget-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .tp-widget-text { flex: 1; min-width: 180px; }
+    .tp-widget-text strong { display: block; font-size: 0.95rem; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+    .tp-widget-text span { font-size: 0.85rem; color: #777; }
+    .tp-widget-btn { background: #c9a96e; color: #fff; padding: 10px 22px; border-radius: 24px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; transition: background 0.2s; }
+    .tp-widget-btn:hover { background: #b8923a; }
+    @media (max-width: 600px) { .tp-widget-inner { flex-direction: column; align-items: flex-start; } }
+
+    /* ── TRAVEL TIP BOX ── */
+    .tip-box { background: linear-gradient(135deg, #f0f8f0, #e8f5e8); border-left: 4px solid #6ab04c; border-radius: 0 6px 6px 0; padding: 18px 22px; margin: 1.6rem 0; }
+    .tip-box strong { display: block; font-size: 0.88rem; letter-spacing: 0.1em; text-transform: uppercase; color: #4a8a30; margin-bottom: 6px; }
+    .tip-box p { margin: 0; font-size: 0.93rem; color: #2d4a20; }
+
+    /* ── FONT WEIGHT BOOST ── */
+    .article-body p { color: #2a2118; font-weight: 400; }
+    .article-body li { color: #2a2118; font-weight: 400; }
+    body { color: #1a1a1a; }
+
+  
+    a .card-title:hover, a:hover .card-title { color: var(--pink) !important; }
+  </style>
+  <link rel="stylesheet" href="../../assets/css/theme.css" />
+  <!-- Travel Payouts Affiliate Script -->
+  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
+  (function () {
+      var script = document.createElement("script");
+      script.async = 1;
+      script.src = 'https://tpembars.com/NTMxOTk5.js?t=531999';
+      document.head.appendChild(script);
+  })();
+</script>
+</head>
+<body>
+<nav style="background:#faf8f5;border-bottom:1px solid #e8e0d4;padding:0 24px;font-family:'Jost',sans-serif;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;">
+    <a href="../../../index.html" style="font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:#2a2118;text-decoration:none;letter-spacing:0.04em;">Maison Sarddinnah</a>
+    <div style="display:flex;gap:28px;align-items:center;">
+      <a href="../../../sections/travel.html" style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#5c4a38;text-decoration:none;font-weight:500;">Travel</a>
+      <a href="../../../sections/beauty.html" style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#5c4a38;text-decoration:none;font-weight:500;">Beauty</a>
+      <a href="../../../sections/wellness.html" style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#5c4a38;text-decoration:none;font-weight:500;">Wellness</a>
+      <a href="../../../sections/style.html" style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#5c4a38;text-decoration:none;font-weight:500;">Style</a>
+      <a href="../../../sections/digital.html" style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#5c4a38;text-decoration:none;font-weight:500;">Digital</a>
+      <a href="../../../blog/index.html" style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#5c4a38;text-decoration:none;font-weight:500;">All Posts</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="article-hero">
+  <div class="category">AI Travel Planning · Digital Nomad · 2026</div>
+<div style="width:100%;max-height:480px;overflow:hidden;"><img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="" loading="lazy" style="width:100%;height:480px;object-fit:cover;" /></div>
+  <h1>How to Use AI to Plan the Perfect Trip in 2026 — Smarter, Faster, More Personal</h1>
+  <p class="subtitle">The tools changed. Here's how to use them without losing the soul of the journey.</p>
+  <div class="meta">Maison Sarddinnah · Travel Editorial · 2026</div>
+</div>
+
+<div class="article-body">
+
+  <p class="intro-pull">"The best itinerary I ever had was written by an AI at 11pm while I was eating cereal in my kitchen. The second-best thing was that I actually went."</p>
+
+  <p>A year ago, I spent three evenings with seventeen browser tabs open, trying to build a ten-day itinerary for southern Italy. I cross-referenced food blogs, TripAdvisor reviews from 2019, Reddit threads that wandered into philosophical debate, and three different travel influencers who disagreed about everything. I was exhausted before I'd booked a single flight.</p>
+
+  <p>Then I tried asking an AI instead. Within twelve minutes, I had a logical routing, a neighborhood-by-neighborhood breakdown, a list of restaurants with specific reasons for each choice, and a suggested packing list filtered by season and activities. It wasn't perfect — AI never is — but it was a brilliant first draft, and first drafts are exactly what trip planning needs most.</p>
+
+  <p>This is not an article telling you to surrender your travel plans to a chatbot. It's an article about using AI intelligently as a research partner, an itinerary architect, and an organizational tool — while keeping your own instincts, style, and spontaneity exactly where they belong: in charge.</p>
+
+  <div class="divider"></div>
+
+  <h2>What AI Does Brilliantly in Travel Planning</h2>
+
+  <p>AI is exceptional at tasks that require synthesizing large amounts of information quickly. Travel planning is almost entirely that. Before you board a single flight, you need to understand: visa requirements, optimal routing, seasonal weather, neighborhood differences within a city, which attractions justify the line and which don't, and how to sequence days so you're not backtracking across town at rush hour.</p>
+
+  <p>All of this is information that exists somewhere — scattered across hundreds of sources, of varying quality and recency. AI condenses it. Not perfectly, and not without needing your verification, but as a starting point it is incomparably faster than doing it manually.</p>
+
+  <h3>Where AI earns its place in your trip</h3>
+
+  <p>Itinerary structure is where AI shines brightest. Give it your dates, your destination, your travel style, your must-haves and your budget, and it will produce a logical framework for each day — which neighborhoods to stay in, how much time each attraction warrants, when to build in margin. This kind of logistical scaffolding used to take hours. It now takes minutes.</p>
+
+  <p>Research synthesis is equally powerful. "What are the best restaurants for solo female travelers in Porto?" produces something genuinely useful — not because AI has eaten at these restaurants, but because it has processed thousands of reviews and recommendations and can identify patterns. The next step is always to verify, but the question no longer takes an evening to research.</p>
+
+  <div class="prompt-box">
+    <div class="prompt-label">Try This Prompt</div>
+    <p>"I'm a solo female traveler planning 10 days in Japan in April. I love food, slow mornings, art museums, and independent cafés. I dislike crowds and prefer boutique accommodation. I'll be flying into Tokyo and out of Osaka. Build me a routing with a daily structure and specific neighborhood recommendations."</p>
+  </div>
+
+  <h2>A Step-by-Step AI Travel Planning Workflow</h2>
+
+  <div class="step-list">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Start with the big picture</h4>
+        <p>Before any specifics, ask AI for a destination overview: best time to visit, ideal trip length, how different parts of the country or city differ in character. This orients you before you dive into logistics.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Build the routing first</h4>
+        <p>Ask for a logical geographic routing before you book anything. Moving efficiently through a country or region — rather than backtracking — saves money and energy and opens up more of your time for actual experience.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Layer in your preferences</h4>
+        <p>Once you have a framework, refine it. Ask specifically about your interests: food, art, hiking, nightlife, slow mornings — whatever defines how you actually travel. Generic itineraries are useful scaffolding; personalized ones are where trips become memorable.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Verify the non-negotiables</h4>
+        <p>AI can be outdated on specific details: visa requirements, entry restrictions, transport schedules, and seasonal closures change. Always verify these directly with official sources before booking anything that depends on them.</p>
+      </div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>Leave room for wandering</h4>
+        <p>The best AI-assisted itinerary still has blank space. Leave one afternoon per destination unscheduled. That's where the best moments usually happen — the ones you can't plan for and can't replicate.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="affiliate-box">
+    <div class="box-label">Editor's Recommendation</div>
+    <h3>Keep Your Tech Charged and Organized</h3>
+    <p>The digital nomad traveler lives by their devices — and a dead phone at a train station in an unfamiliar city is a problem that a small, lightweight portable charger completely eliminates. Pair it with a good cable organizer and your bag stops being a chaos of tangled cords. These are the unglamorous investments that make travel genuinely smooth.</p>
+    <a href="https://amzn.to/498Uc0C" class="affiliate-link" target="_blank" rel="noopener">Shop Portable Chargers →</a>
+  </div>
+
+  <h2>What AI Cannot Do for Your Trip</h2>
+
+  <p>AI cannot tell you how it felt to walk into a particular church in the late afternoon when the light was doing something you hadn't anticipated. It cannot know that the restaurant it recommends closed six months ago, or that the neighborhood it describes has changed since its training data was collected.</p>
+
+  <p>More importantly, AI cannot know what you need from a trip at this specific moment in your life. The woman who needs to be alone with her thoughts needs a different itinerary than the woman who needs stimulation and new faces and full days. You are the only one who knows which trip you need right now.</p>
+
+  <p>Use AI as you'd use a very well-read research assistant who has never been anywhere: enormously useful, occasionally wrong about the details, completely ignorant of feeling. Your job is to take the research and bring the feeling.</p>
+
+  <div class="affiliate-box">
+    <div class="box-label">Editor's Recommendation</div>
+    <h3>The Carry-On That Makes the Digital Nomad Life Work</h3>
+    <p>Working and traveling simultaneously requires a bag that can carry a laptop, organized cables, a change of clothes, and still make it through an airport without causing chaos. A structured carry-on with smart interior organization isn't a luxury — it's what makes the whole system function.</p>
+    <a href="https://amzn.to/4uhXZkR" class="affiliate-link" target="_blank" rel="noopener">Shop Carry-On Luggage →</a>
+  </div>
+
+  <h2>The Best AI Tools for Travel Planning in 2026</h2>
+
+  <p><strong>Claude and ChatGPT</strong> remain the most versatile for conversation-based itinerary building. Their strength is in understanding nuanced prompts — "I want this trip to feel unhurried" produces genuinely different results from "I want to see as much as possible."</p>
+
+  <p><strong>Google's AI features in Maps and Search</strong> have become more integrated into the practical logistics of travel planning — transport routing, real-time business information, and local discovery are noticeably smarter than they were two years ago.</p>
+
+  <p><strong>Specialized travel AI tools</strong> have multiplied in the last two years. Some focus on flight price prediction, some on hotel personalization, some on experience curation. None is perfect in isolation; the most effective approach remains using general AI for strategy and specialized tools for specific decisions.</p>
+
+  <div class="affiliate-box">
+    <div class="box-label">Editor's Recommendation</div>
+    <h3>The Organizer That Makes a Carry-On Feel Like a Checked Bag</h3>
+    <p>The right packing system changes everything about how you move through airports, hotels, and days on the road. Travel organizers — the kind that sort your cables, adapters, documents, and essentials into clear categories — eliminate the morning bag-excavation and return minutes to every single day of your trip.</p>
+    <a href="https://amzn.to/4dO0lBT" class="affiliate-link" target="_blank" rel="noopener">Shop Travel Organizers →</a>
+  </div>
+
+  <h2>Prompting Well: How to Get What You Actually Want</h2>
+
+  <p>The quality of an AI travel plan is almost entirely a function of how specifically you ask for it. Vague prompts produce generic results. Specific, contextual prompts produce genuinely useful plans.</p>
+
+  <p>The most useful additions to any travel prompt: your travel style ("I move slowly and prioritize food"), your absolute non-negotiables ("I must have good coffee within walking distance in the morning"), your travel history ("I've been to Paris twice and want nothing like that"), and your context ("this is a solo trip after a difficult year; I want it to feel restorative").</p>
+
+  <p>That last category — your emotional context — is one most people feel self-conscious including. Don't. An AI that knows you need rest will build you a different itinerary than one that assumes you want maximum efficiency. Both are valid. Only you know which one you need.</p>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h4>Can I trust AI to plan my entire trip?</h4>
+      <p>As a research and structural tool, yes — with verification. AI is excellent at synthesizing information and building logical itineraries. It is less reliable on very specific, time-sensitive details like visa requirements, transport schedules, and whether a specific restaurant still exists. Always verify the non-negotiables with official sources.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How specific should my AI travel prompt be?</h4>
+      <p>As specific as possible. Include your travel dates, destination, travel style, interests, budget range, accommodation preference, and — importantly — what you want to feel during this trip. The more context you provide, the more useful the result.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>What's the biggest mistake people make when AI-planning trips?</h4>
+      <p>Following the AI itinerary too rigidly. The best AI plan is a starting point, not a scripture. Build it, review it, adjust it based on your own knowledge and instincts, and then leave enough flexibility that the trip can surprise you.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Can AI help with travel packing lists?</h4>
+      <p>Yes — and it's one of the most underrated applications. Ask for a packing list filtered by destination, season, activities, and trip length. It will think of things you won't. Still review it with your own common sense, but it's a very useful first draft.</p>
+    </div>
+  </div>
+
+  <div class="pinterest-section">
+    <h3>Suggested Pinterest Titles</h3>
+    <ul>
+      <li>How to Use AI to Plan Your Dream Trip in 2026 (Step-by-Step)</li>
+      <li>AI Travel Planning Guide — What Works and What Doesn't</li>
+      <li>The Exact AI Prompts I Use to Plan Every Trip</li>
+      <li>Digital Nomad Travel Planning: AI Tools That Actually Help</li>
+      <li>Smart Travel in 2026 — Using AI Without Losing the Magic</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="article-newsletter">
+  <h4>Enjoyed This? Get More Every Thursday.</h4>
+  <p>Join The Maison Edit — our weekly newsletter with travel finds, beauty picks, and reads worth your time.</p>
+  <form class="nl-form-inline newsletter-form" onsubmit="return false;">
+    <input type="email" placeholder="Your email address" required />
+    <button type="submit">Subscribe Free</button>
+  </form>
+</div>
+<div class="related-reads-section">
+  <h3 class="related-reads-heading">Related Reads</h3>
+  <div class="related-reads-grid">
+    <a href="the-truth-about-growing-on-tiktok-in-2026.html" class="related-card">
+      <div class="related-card-label">Digital</div>
+      <div class="related-card-title">The Truth About Growing on TikTok in 2026</div>
+      <span class="related-card-link">Read Article →</span>
+    </a>
+    <a href="how-to-price-your-work-online-and-stop-undercharging.html" class="related-card">
+      <div class="related-card-label">Digital</div>
+      <div class="related-card-title">How to Price Your Work Online (And Stop Undercharging)</div>
+      <span class="related-card-link">Read Article →</span>
+    </a>
+    <a href="how-to-turn-your-knowledge-into-an-online-course.html" class="related-card">
+      <div class="related-card-label">Digital</div>
+      <div class="related-card-title">How to Turn Your Knowledge Into an Online Course</div>
+      <span class="related-card-link">Read Article →</span>
+    </a>
+  </div>
+</div>
+
+<footer style="background:#2a2118;color:#c8bfb0;text-align:center;padding:40px 24px;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:0.1em;">
+  <a href="../../../index.html" style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#f5f0e8;text-decoration:none;display:block;margin-bottom:16px;">Maison Sarddinnah</a>
+  <div style="margin-bottom:12px;">
+    <a href="../../../sections/travel.html" style="color:#8a7d6e;text-decoration:none;margin:0 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.15em;">Travel</a>
+    <a href="../../../sections/beauty.html" style="color:#8a7d6e;text-decoration:none;margin:0 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.15em;">Beauty</a>
+    <a href="../../../sections/wellness.html" style="color:#8a7d6e;text-decoration:none;margin:0 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.15em;">Wellness</a>
+    <a href="../../../sections/style.html" style="color:#8a7d6e;text-decoration:none;margin:0 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.15em;">Style</a>
+    <a href="../../../sections/digital.html" style="color:#8a7d6e;text-decoration:none;margin:0 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.15em;">Digital</a>
+    <a href="../../../blog/index.html" style="color:#8a7d6e;text-decoration:none;margin:0 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.15em;">Blog</a>
+  </div>
+  <div style="color:#5c4a38;margin-top:8px;">
+    <a href="../../../affiliate-disclosure.html" style="color:#5c4a38;text-decoration:none;margin:0 8px;">Affiliate Disclosure</a> ·
+    <a href="../../../privacy-policy.html" style="color:#5c4a38;text-decoration:none;margin:0 8px;">Privacy Policy</a> ·
+    <a href="../../../terms-conditions.html" style="color:#5c4a38;text-decoration:none;margin:0 8px;">Terms</a>
+  </div>
+  <p style="margin-top:16px;color:#3d3228;">© 2026 Maison Sarddinnah. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
