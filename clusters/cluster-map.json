@@ -1,0 +1,29 @@
+{
+  "kyoto": {
+    "pillar": "kyoto-travel-guide.html",
+    "editorial": "kyoto-editorial-guide.html",
+    "cluster_pages": [
+      "kyoto-3-day-itinerary.html",
+      "best-day-trips-from-kyoto.html",
+      "best-luxury-hotels-kyoto.html",
+      "best-ryokans-kyoto.html",
+      "where-to-stay-kyoto.html",
+      "15-unmissable-experiences-kyoto.html"
+    ]
+  },
+  "osaka": {
+    "pillar": null,
+    "editorial": null,
+    "cluster_pages": []
+  },
+  "tokyo": {
+    "pillar": null,
+    "editorial": null,
+    "cluster_pages": []
+  },
+  "dubai": {
+    "pillar": null,
+    "editorial": null,
+    "cluster_pages": []
+  }
+}

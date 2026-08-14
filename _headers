@@ -1,0 +1,23 @@
+# ================================================
+# MAISON SARDDINNAH — CLOUDFLARE HEADERS
+# ================================================
+
+/*
+  # Security headers
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-XSS-Protection: 1; mode=block
+
+# Osaka blog — allow all third-party widget scripts
+/blog/travel/the-ultimate-osaka-travel-guide.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/*
+  # Aggressive caching for static assets (1 year)
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+  # HTML pages — revalidate often
+  Cache-Control: public, max-age=3600, must-revalidate

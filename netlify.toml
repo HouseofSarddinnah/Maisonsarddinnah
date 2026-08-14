@@ -1,0 +1,30 @@
+# Netlify Configuration for 301 Redirect
+# Redirects all www traffic to non-www canonical domain
+
+# Redirect rules
+[[redirects]]
+  from = "https://www.maisonsarddinnah.com/*"
+  to = "https://maisonsarddinnah.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.maisonsarddinnah.com/*"
+  to = "https://maisonsarddinnah.com/:splat"
+  status = 301
+  force = true
+
+# HTTP to HTTPS redirect
+[[redirects]]
+  from = "http://maisonsarddinnah.com/*"
+  to = "https://maisonsarddinnah.com/:splat"
+  status = 301
+  force = true
+
+# Headers for security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
