@@ -2,8 +2,11 @@
   "name": "maisonsarddinnah-web",
   "private": true,
   "scripts": {
+    "check:canonicals": "node scripts/check-canonicals.js",
+    "check:catalog": "node scripts/check-catalog-sync.js",
     "sync:public": "node scripts/sync-public.js",
-    "build": "node build.js && npm run sync:public"
+    "build": "node build.js && npm run sync:public",
+    "prepare:release": "npm run check:catalog && npm run check:canonicals && npm run build"
   },
   "devDependencies": {
     "wrangler": "4.123.0"
