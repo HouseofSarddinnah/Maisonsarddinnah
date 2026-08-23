@@ -2,7 +2,8 @@
   "name": "maisonsarddinnah-web",
   "private": true,
   "scripts": {
-    "build": "node build.js"
+    "sync:public": "node scripts/sync-public.js",
+    "build": "node build.js && npm run sync:public"
   },
   "devDependencies": {
     "wrangler": "4.123.0"
