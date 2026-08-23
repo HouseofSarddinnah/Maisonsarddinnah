@@ -88,11 +88,20 @@ templateHtml = templateHtml.replace(
 const outputPath = path.join(__dirname, 'sections', 'travel.html');
 fs.writeFileSync(outputPath, templateHtml, 'utf8');
 
+// Keep public build output in sync when Pages serves from public/
+const publicOutputPath = path.join(__dirname, 'public', 'sections', 'travel.html');
+if (fs.existsSync(path.dirname(publicOutputPath))) {
+  fs.writeFileSync(publicOutputPath, templateHtml, 'utf8');
+}
+
 console.log('✅ Build completed successfully!');
 console.log(`📝 Generated static SEO grid with ${featuredPosts.length} articles`);
 console.log(`📝 Generated noscript fallback with ${noscriptPosts.length} articles`);
 console.log(`📝 Generated featured section with ${featuredSectionPosts.length} articles`);
 console.log('📝 Generated sections/travel.html from template');
+if (fs.existsSync(path.dirname(publicOutputPath))) {
+  console.log('📝 Synced public/sections/travel.html from template');
+}
 console.log('✨ Template separation: travel.template.html → travel.html');
 console.log('✨ Deterministic sorting: Stable SEO structure guaranteed');
 console.log('✨ SEO/UX separation: Strict layer separation implemented');
