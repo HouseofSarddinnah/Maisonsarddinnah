@@ -419,7 +419,10 @@
     }
 
     if (popularGrid) {
-      const featured = blogIndex.getFeaturedPosts().slice(0, 4);
+      const featured = blogIndex.getFeaturedPosts()
+        .slice()
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 4);
       popularGrid.innerHTML = featured.map((post, i) => `
         <a href="${post.url.replace(/^\//, '')}" class="trending-item">
           <div class="trending-number">${String(i + 1).padStart(2, '0')}</div>
