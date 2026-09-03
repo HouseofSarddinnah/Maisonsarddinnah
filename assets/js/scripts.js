@@ -25,6 +25,23 @@
     }
   });
 
+  const destinationMenu = document.querySelector('.nav-dropdown-content');
+  if (destinationMenu) {
+    [
+      ['Japan Family Travel', '/destinations/japan-family-travel.html'],
+      ['Kyoto', '/destinations/kyoto.html'],
+      ['Osaka', '/destinations/osaka.html'],
+      ['Luxury Family Travel', '/destinations/luxury-family-travel.html']
+    ].forEach(([label, href]) => {
+      if (!destinationMenu.querySelector(`a[href="${href}"]`)) {
+        const link = document.createElement('a');
+        link.href = href;
+        link.textContent = label;
+        destinationMenu.appendChild(link);
+      }
+    });
+  }
+
   /* ── Scroll-reveal (JS adds hidden class, so content visible without JS) ── */
   if ('IntersectionObserver' in window) {
     const reveals = document.querySelectorAll('.reveal');
