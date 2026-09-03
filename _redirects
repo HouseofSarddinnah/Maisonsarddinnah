@@ -6,8 +6,7 @@
 # ================================================
 
 # FORCE WWW → NON-WWW (CRITICAL SEO RULE)
-https://www.maisonsarddinnah.com/* https://maisonsarddinnah.com/:splat 301!
-http://www.maisonsarddinnah.com/* https://maisonsarddinnah.com/:splat 301!
+# Handled by worker.js because Worker Assets requires relative _redirects paths.
 
 # Old URL patterns → new structure
 /hidden-gems---europe.html        /blog/travel/hidden-gems-europe.html    301
@@ -31,9 +30,6 @@ http://www.maisonsarddinnah.com/* https://maisonsarddinnah.com/:splat 301!
 
 # Trailing slashes
 /blog/                            /blog/index.html                        301
-
-# 404 fallback
-/*                                /index.html                             404
 
 # New blog posts — vol1 & vol3
 /blog/common-techie-mistakes-you-should-avoid-when-traveling /blog/travel/common-techie-mistakes-you-should-avoid-when-traveling.html 301
